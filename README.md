@@ -5,8 +5,8 @@
 
 HeiHealth is a FastAPI backend and React frontend for visualizing European
 Patient Summary (EPS) data with SMART App Launch simulation. The patient data
-comes from HL7 SynderAI's example patients, following the European Patient
-Summary Bundle structure.
+comes from [HL7 SynderAI's](https://synderai.net/index.php?menu=index) example
+patients, following the European Patient Summary Bundle structure.
 
 ## Project Structure
 
@@ -90,10 +90,11 @@ GET /smart/launch?patient=eps-001&org=OuluHVA
 
 **FHIR** (Fast Healthcare Interoperability Resources) is an HL7 standard for
 exchanging healthcare information electronically. All FHIR endpoints return
-resources extracted from HL7 SynderAI European Patient Summary Bundle format.
-The data structure follows the SynderAI EPS Bundle specification with **FHIR
-R4** (version 4) resources, which are standard healthcare data formats like
-Patient, Condition, Observation, etc.
+resources extracted from
+[HL7 SynderAI](https://synderai.net/index.php?menu=index) European Patient
+Summary Bundle format. The data structure follows the SynderAI EPS Bundle
+specification with **FHIR R4** (version 4) resources, which are standard
+healthcare data formats like Patient, Condition, Observation, etc.
 
 #### Patient Resource
 
@@ -387,7 +388,8 @@ frontend/
 - SMART App Launch simulation
 - FHIR R4 compliant endpoints
 - HL7 SynderAI European Patient Summary (EPS) Bundle format
-- Patient data from SynderAI's example patients
+- Patient data from [SynderAI's](https://synderai.net/index.php?menu=index)
+  example patients
 - CORS enabled for frontend access
 - Auto-reload in development
 
@@ -408,10 +410,10 @@ frontend/
 
 The backend uses HL7 SynderAI European Patient Summary Bundle format where all
 resources are stored in a single JSON Bundle file. The patient data comes from
-SynderAI's example patients.
+[SynderAI's](https://synderai.net/index.php?menu=index) example patients.
 
-- **Source**: HL7 SynderAI example patients (European Patient Summary Bundle
-  format)
+- **Source**: [HL7 SynderAI](https://synderai.net/index.php?menu=index) example
+  patients (European Patient Summary Bundle format)
 - **Location**: `app/data/{patient-id}.json`
 - **Format**: FHIR R4 Bundle with `type: "document"` following SynderAI EPS
   specification
@@ -452,14 +454,16 @@ SynderAI's example patients.
 
 ## Data Attribution
 
-This project uses patient data from HL7 SynderAI's example patients, following
-the European Patient Summary (EPS) Bundle format. The data structure and format
-are based on HL7 SynderAI's EPS specification for interoperability testing and
-training purposes.
+This project uses patient data from
+[HL7 SynderAI's](https://synderai.net/index.php?menu=index) example patients,
+following the European Patient Summary (EPS) Bundle format. The data structure
+and format are based on HL7 SynderAI's EPS specification for interoperability
+testing and training purposes.
 
-**Data Source**: HL7 SynderAI example patients (European Patient Summary Bundle
-format) **Purpose**: Development, testing, and training only (non-clinical use)
-**Tags**: All resources include SynderAI synthetic data markers (HTEST, TRAIN)
+**Data Source**: [HL7 SynderAI](https://synderai.net/index.php?menu=index)
+example patients (European Patient Summary Bundle format) **Purpose**:
+Development, testing, and training only (non-clinical use) **Tags**: All
+resources include SynderAI synthetic data markers (HTEST, TRAIN)
 
 ## CI/CD
 
