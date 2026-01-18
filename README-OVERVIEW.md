@@ -40,34 +40,28 @@ Details Page - Comprehensive health information:
 
 ### Login Page
 
-_[Screenshot: Login page with patient and organization selection]_
+<img width="1512" height="822" alt="image" src="https://github.com/user-attachments/assets/5c4e4568-12b7-4a29-8ce4-9f6b24ca3fa2" />
 
 The application starts with a SMART App Launch simulation, where users select a
 patient and healthcare organization to access their health data.
 
 ### Patient Overview Dashboard
 
-_[Screenshot: Overview page showing patient information, key metrics, and active
-conditions]_
+<img width="1512" height="822" alt="image" src="https://github.com/user-attachments/assets/378e8808-e3bb-45f3-ada1-2eaf66146c7d" />
+<img width="1451" height="822" alt="image" src="https://github.com/user-attachments/assets/226e45ab-8eba-4fc9-8d6b-7ff5b09744bc" />
+
 
 The overview provides a quick snapshot of the patient's health status with key
 metrics displayed in easy-to-read cards.
 
 ### Patient Details View
 
-_[Screenshot: Details page showing comprehensive health information across
-multiple sections]_
+<img width="1455" height="767" alt="image" src="https://github.com/user-attachments/assets/bad26aee-7b80-45f7-8bc1-f9ab794bba67" />
+<img width="1455" height="764" alt="image" src="https://github.com/user-attachments/assets/8a3f61fb-d6f9-40c9-b45a-aef2defd446f" />
+
 
 The details page offers a complete view of all patient health information,
 organized into clear sections.
-
-### Multi-Patient Support
-
-_[Screenshot: Patient dropdown showing multiple patients with names and
-identifiers]_
-
-Users can easily switch between different patients to view their respective
-health records.
 
 ## Technology Stack
 
