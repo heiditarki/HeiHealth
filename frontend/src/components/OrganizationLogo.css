@@ -1,0 +1,92 @@
+.org-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* OYS Logo */
+.oys-logo {
+  gap: 12px;
+}
+
+.oys-star {
+  font-size: 24px;
+  color: #0066cc;
+  line-height: 1;
+}
+
+.oys-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.oys-acronym {
+  font-size: 18px;
+  font-weight: 700;
+  color: #003366;
+  text-transform: lowercase;
+  letter-spacing: -0.5px;
+}
+
+.oys-full {
+  font-size: 10px;
+  color: #0066cc;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+/* HUS Logo */
+.hus-logo {
+  gap: 4px;
+}
+
+.hus-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #003366;
+  letter-spacing: -0.5px;
+}
+
+.hus-cross {
+  font-size: 16px;
+  color: #00a8a8;
+  line-height: 1;
+  margin-left: 2px;
+}
+
+/* Tays Logo */
+.tays-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tays-logo-image {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.tays-fallback {
+  display: flex;
+  align-items: center;
+}
+
+.tays-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #003366;
+  letter-spacing: -0.3px;
+  text-transform: none;
+}
+
+/* Default logo */
+.default-logo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  padding: 4px 12px;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+}

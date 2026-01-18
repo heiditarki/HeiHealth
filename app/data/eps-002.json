@@ -1,0 +1,1463 @@
+{
+  "resourceType": "Bundle",
+  "id": "74e7b386-801d-45d3-9eeb-f3326c0e0d96",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/eps/StructureDefinition/bundle-eu-eps"
+    ]
+  },
+  "identifier": {
+    "assigner": {
+      "display": "HL7 Europe"
+    },
+    "system": "urn:oid:2.16.840.1.113883.2.51.999",
+    "value": "bb5ca7c9-030a-44a6-934a-4934518c8d96"
+  },
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:8237fc45-c26c-43e9-8fe7-a0c373f1cf98",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "8237fc45-c26c-43e9-8fe7-a0c373f1cf98",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "TRAIN"
+            }
+          ],
+          "tag": [
+            {
+              "system": "https://synderai.net/fhir/CodeSystem/tags",
+              "code": "synthetic",
+              "display": "SYNDERAI Synthetic data"
+            }
+          ],
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/composition-eu-eps"
+          ]
+        },
+        "identifier": {
+          "assigner": {
+            "display": "HL7 Europe"
+          },
+          "system": "urn:oid:2.16.840.1.113883.2.51.999",
+          "value": "1ef0625c-34e5-4997-a116-d947090e63a5"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "60591-5",
+              "system": "http://loinc.org",
+              "display": "Patient summary Document"
+            }
+          ],
+          "text": "Patient summary Document"
+        },
+        "author": [
+          {
+            "reference": "urn:uuid:c77bb8a8-4808-40be-9d50-678bbccdc643"
+          }
+        ],
+        "section": [
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>No known problems or disabilities</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:82481cc1-310b-4416-8f2b-0e12bdf1c241"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4",
+                  "display": "Problem list - Reported"
+                }
+              ]
+            },
+            "title": "Problem list"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>No known medications</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:aba92479-bb09-4c0b-83e8-6a720c1263e9"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10160-0",
+                  "display": "History of Medication use Narrative"
+                }
+              ]
+            },
+            "title": "Medication list"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vaccine</th><th>Date</th></tr><tr><td>Clostridium tetani toxoid antigen adsorbed only vaccine product</td><td><span class=\"nb\">29-Apr-2023</span></td></tr><tr><td>Influenza virus antigen only vaccine product</td><td><span class=\"nb\">29-Apr-2023</span></td></tr><tr><td>SARS-CoV-2 mRNA vaccine</td><td><span class=\"nb\">19-Jun-2021</span></td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:b2eeb960-1830-4e2f-9b01-e2c447a032e3"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11369-6",
+                  "display": "History of Immunization note"
+                }
+              ]
+            },
+            "title": "Immunizations list"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Procedure</th><th>Date</th><th>Reason</th></tr><tr><td>Suture open wound</td><td><span class=\"nb\">12-May-2016</span></td><td>Laceration of hand</td></tr><tr><td>Injection of tetanus antitoxin</td><td><span class=\"nb\">12-May-2016</span></td><td>Laceration of hand</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:1590d47b-354e-4827-8aea-8f42cd78c50c"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "47519-4",
+                  "display": "History of Procedures Document"
+                }
+              ]
+            },
+            "title": "Procedure History list"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Allergy/Intolerance</th><th>Onset Date</th><th>Status</th><th>Type</th><th>Reaction</th></tr><tr><td></td><td>?</td><td>active</td><td>?</td><td></td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:558da534-2c60-492e-aa4b-44a61cf28a53"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48765-2",
+                  "display": "Allergies and adverse reactions Document"
+                }
+              ]
+            },
+            "title": "Allergies and Intolerances"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Signs</th><th>2023-04-29</th><th>2020-11-07</th></tr><tr><td>Body Height</td><td>172.9 cm</td><td>172.9 cm</td></tr><tr><td>Pain severity - 0-10 verbal numeric rating [Score] - Reported</td><td>3 {score}</td><td>0 {score}</td></tr><tr><td>Body Weight</td><td>83.6 kg</td><td>78.8 kg</td></tr><tr><td>Body mass index (BMI) [Ratio]</td><td>28 kg/m2</td><td>26.4 kg/m2</td></tr><tr><td>Diastolic Blood Pressure</td><td>76 mm[Hg]</td><td>83 mm[Hg]</td></tr><tr><td>Systolic Blood Pressure</td><td>99 mm[Hg]</td><td>98 mm[Hg]</td></tr><tr><td>Heart rate</td><td>98 /min</td><td>72 /min</td></tr><tr><td>Respiratory rate</td><td>12 /min</td><td>15 /min</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:749f5ac1-0b16-487a-b79d-b96ea616b201"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8716-3",
+                  "display": "Vital signs note"
+                }
+              ]
+            },
+            "title": "Vital Signs"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><table class=\"hl7__ips\"><thead><tr><th>Recent Lab Observations</th><th>29-APR-2023</th><th>Reference&#xA0;Range</th><th>Unit</th></tr></thead><tbody><tr><td>Cholesterol [Mass/volume] in Serum or Plasma</td><td>189.9</td><td>130 - 200</td><td>mg/dL</td></tr><tr><td>Triglyceride [Mass/volume] in Serum or Plasma</td><td>141.5</td><td>0 - 150</td><td>mg/dL</td></tr><tr><td>Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay</td><td><strong>134.0 H</strong></td><td>0 - 130</td><td>mg/dL</td></tr><tr><td>Cholesterol in HDL [Mass/volume] in Serum or Plasma</td><td><strong>27.6 L</strong></td><td>40 - 60</td><td>mg/dL</td></tr></tbody></table></table></div>"
+            },
+            "title": "Relevant diagnostic tests/laboratory data",
+            "code": {
+              "coding": [
+                {
+                  "code": "30954-2",
+                  "system": "http://loinc.org",
+                  "display": "Relevant diagnostic tests/laboratory data note"
+                }
+              ]
+            }
+          }
+        ],
+        "title": "European Patient Summary",
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "custodian": {
+          "reference": "urn:uuid:3f64f9b8-01f2-487f-8c6a-f23e59e08009"
+        },
+        "date": "2023-04-29",
+        "confidentiality": "N"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "eps-002",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "TRAIN"
+            }
+          ],
+          "tag": [
+            {
+              "system": "https://synderai.net/fhir/CodeSystem/tags",
+              "code": "synthetic",
+              "display": "SYNDERAI Synthetic data"
+            }
+          ],
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/patient-eu-eps"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "PT",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://ec.europa.eu/identifier/eci",
+            "value": "2972-086386-8"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "MR",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://local.setting.eu/identifier",
+            "value": "905bde47-4455-d79f-9ff3-0dfb31119497"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Bob"
+            ],
+            "family": "Madsen",
+            "text": "Bob Madsen"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "Bellmans Allé 394"
+            ],
+            "use": "home",
+            "type": "physical",
+            "postalCode": "3700",
+            "city": "Rønne",
+            "country": "Denmark"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+45 28 24 17 02"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "DK",
+                  "system": "http://hl7.org/fhir/ValueSet/country"
+                }
+              ]
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Bob Madsen</td><td>male</td><td>21-Aug-1994</td></tr></table></div>"
+        },
+        "gender": "male",
+        "birthDate": "1994-08-21"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c77bb8a8-4808-40be-9d50-678bbccdc643",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "c77bb8a8-4808-40be-9d50-678bbccdc643",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\">Provider Role Id c77bb8a8-4808-40be-9d50-678bbccdc643</table></div>"
+        },
+        "practitioner": {
+          "reference": "urn:uuid:12f2598c-900c-4059-897f-d29cef8304eb"
+        },
+        "organization": {
+          "reference": "urn:uuid:3f64f9b8-01f2-487f-8c6a-f23e59e08009"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3f64f9b8-01f2-487f-8c6a-f23e59e08009",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "3f64f9b8-01f2-487f-8c6a-f23e59e08009",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/base/StructureDefinition/organization-eu"
+          ]
+        },
+        "identifier": [
+          {
+            "assigner": {
+              "display": "HL7 Europe"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.51.999",
+            "value": "4d156321-542f-49f4-a08d-4d5a21b3815e"
+          }
+        ],
+        "address": [
+          {
+            "postalCode": "3700",
+            "country": "Denmark"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\">Bornholms Hospital</table></div>"
+        },
+        "name": "Bornholms Hospital"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:12f2598c-900c-4059-897f-d29cef8304eb",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "12f2598c-900c-4059-897f-d29cef8304eb",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu"
+          ]
+        },
+        "name": [
+          {
+            "prefix": [
+              "Dr."
+            ],
+            "given": [
+              "Hel"
+            ],
+            "family": "Ping"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\">Dr. Hel Ping</table></div>"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:82481cc1-310b-4416-8f2b-0e12bdf1c241",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "82481cc1-310b-4416-8f2b-0e12bdf1c241",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "160245001",
+              "system": "http://snomed.info/sct",
+              "display": "No current problems or disability (situation)"
+            }
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>No known problems or disabilities</td></tr></table></div>"
+        },
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "_onsetDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:aba92479-bb09-4c0b-83e8-6a720c1263e9",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "aba92479-bb09-4c0b-83e8-6a720c1263e9",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/MedicationStatement-eu-eps"
+          ]
+        },
+        "effectivePeriod": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "787481004",
+              "system": "http://snomed.info/sct",
+              "display": "No known medications (situation)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b2eeb960-1830-4e2f-9b01-e2c447a032e3",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "b2eeb960-1830-4e2f-9b01-e2c447a032e3",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "777725002",
+              "system": "http://snomed.info/sct",
+              "display": "Vaccine product containing only Clostridium tetani toxoid antigen adsorbed"
+            },
+            {
+              "code": "J07AM51",
+              "system": "http://www.whocc.no/atc",
+              "display": "Diphtheria-tetanus vaccines, adult type"
+            }
+          ],
+          "text": "Clostridium tetani toxoid antigen adsorbed only vaccine product"
+        },
+        "site": {
+          "coding": [
+            {
+              "code": "244979005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire muscle of upper arm"
+            }
+          ],
+          "text": "Entire muscle of upper arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "code": "78421000",
+              "system": "http://snomed.info/sct",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular route"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Clostridium tetani toxoid antigen adsorbed only vaccine product</td><td><span class=\"nb\">29-Apr-2023</span></td></tr></table></div>"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "occurrenceDateTime": "2023-04-29",
+        "lotNumber": "HL-Asi9367U",
+        "expirationDate": "2023-09-30"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e5caf32b-b45c-48e8-bb0f-e1e0ebca03e4",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "e5caf32b-b45c-48e8-bb0f-e1e0ebca03e4",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "1181000221105",
+              "system": "http://snomed.info/sct",
+              "display": "Vaccine product containing Influenza virus antigen"
+            },
+            {
+              "code": "J07BB02",
+              "system": "http://www.whocc.no/atc",
+              "display": "Influenza, inactivated, split virus"
+            }
+          ],
+          "text": "Influenza virus antigen only vaccine product"
+        },
+        "site": {
+          "coding": [
+            {
+              "code": "244979005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire muscle of upper arm"
+            }
+          ],
+          "text": "Entire muscle of upper arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "code": "78421000",
+              "system": "http://snomed.info/sct",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular route"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Influenza virus antigen only vaccine product</td><td><span class=\"nb\">29-Apr-2023</span></td></tr></table></div>"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "occurrenceDateTime": "2023-04-29",
+        "lotNumber": "AM-zv1eKVf",
+        "expirationDate": "2024-04-07"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:67b61768-d7b9-416c-9930-0f1e973fef8b",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "67b61768-d7b9-416c-9930-0f1e973fef8b",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "1119349007",
+              "system": "http://snomed.info/sct",
+              "display": "Vaccine product containing SARS-CoV-2 mRNA"
+            },
+            {
+              "code": "J07BX03",
+              "system": "http://www.whocc.no/atc",
+              "display": "COVID-19 mRNA vaccines"
+            }
+          ],
+          "text": "SARS-CoV-2 mRNA vaccine"
+        },
+        "site": {
+          "coding": [
+            {
+              "code": "244979005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire muscle of upper arm"
+            }
+          ],
+          "text": "Entire muscle of upper arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "code": "78421000",
+              "system": "http://snomed.info/sct",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular route"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>SARS-CoV-2 mRNA vaccine</td><td><span class=\"nb\">19-Jun-2021</span></td></tr></table></div>"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "occurrenceDateTime": "2021-06-19",
+        "lotNumber": "MX-56DhC67",
+        "expirationDate": "2021-11-03"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1590d47b-354e-4827-8aea-8f42cd78c50c",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "1590d47b-354e-4827-8aea-8f42cd78c50c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "288086009",
+              "system": "http://snomed.info/sct",
+              "display": "Suture open wound"
+            }
+          ],
+          "text": "Suture open wound"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "284549007",
+                "system": "http://snomed.info/sct",
+                "display": "Laceration of hand"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Suture open wound</td><td><span class=\"nb\">12-May-2016</span></td><td>Laceration of hand</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2016-05-12",
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7ff3332c-eafd-4699-9f69-2441b59897e9",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "7ff3332c-eafd-4699-9f69-2441b59897e9",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "384700001",
+              "system": "http://snomed.info/sct",
+              "display": "Injection of tetanus antitoxin"
+            }
+          ],
+          "text": "Injection of tetanus antitoxin"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "284549007",
+                "system": "http://snomed.info/sct",
+                "display": "Laceration of hand"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Injection of tetanus antitoxin</td><td><span class=\"nb\">12-May-2016</span></td><td>Laceration of hand</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2016-05-12",
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:558da534-2c60-492e-aa4b-44a61cf28a53",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "558da534-2c60-492e-aa4b-44a61cf28a53",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core"
+          ]
+        },
+        "code": {
+          "text": ""
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+            }
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Allergy/Intolerance</th><th>Onset Date</th><th>Status</th><th>Type</th><th>Reaction</th></tr><tr><td></td><td>?</td><td>active</td><td>?</td><td></td></tr></table></div>"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "_onsetDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:749f5ac1-0b16-487a-b79d-b96ea616b201",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "749f5ac1-0b16-487a-b79d-b96ea616b201",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 172.9,
+          "code": "cm",
+          "unit": "cm"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body Height</td><td>29-Apr-2023</td><td>172.9 cm</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8302-2",
+              "system": "http://loinc.org",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "effectiveDateTime": "2023-04-29"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:300e02e2-4fb4-432c-b50e-919e09db5136",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "300e02e2-4fb4-432c-b50e-919e09db5136",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 3,
+          "code": "{score}",
+          "unit": "{score}"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Pain severity - 0-10 verbal numeric rating [Score] - Reported</td><td>29-Apr-2023</td><td>3 {score}</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "72514-3",
+              "system": "http://loinc.org",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "effectiveDateTime": "2023-04-29"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:730e57de-cf54-4491-b160-2abe8843cd5d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "730e57de-cf54-4491-b160-2abe8843cd5d",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 83.6,
+          "code": "kg",
+          "unit": "kg"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body Weight</td><td>29-Apr-2023</td><td>83.6 kg</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "29463-7",
+              "system": "http://loinc.org",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "effectiveDateTime": "2023-04-29"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1e7debb8-2c47-405f-8b10-78d96cad0ce8",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1e7debb8-2c47-405f-8b10-78d96cad0ce8",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 28,
+          "code": "kg/m2",
+          "unit": "kg/m2"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body mass index (BMI) [Ratio]</td><td>29-Apr-2023</td><td>28 kg/m2</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "39156-5",
+              "system": "http://loinc.org",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "effectiveDateTime": "2023-04-29"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:af05e384-3aaa-42f2-9684-48c9020e1238",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "af05e384-3aaa-42f2-9684-48c9020e1238",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 76,
+          "code": "mm[Hg]",
+          "unit": "mm[Hg]"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Diastolic Blood Pressure</td><td>29-Apr-2023</td><td>76 mm[Hg]</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8462-4",
+              "system": "http://loinc.org",
+              "display": "Diastolic Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "effectiveDateTime": "2023-04-29"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:518eba6a-7919-483e-af94-355ec1e357e1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "518eba6a-7919-483e-af94-355ec1e357e1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 99,
+          "code": "mm[Hg]",
+          "unit": "mm[Hg]"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Systolic Blood Pressure</td><td>29-Apr-2023</td><td>99 mm[Hg]</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8480-6",
+              "system": "http://loinc.org",
+              "display": "Systolic Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "effectiveDateTime": "2023-04-29"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ef3f8399-d746-40b9-9c7f-c04376d92dac",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ef3f8399-d746-40b9-9c7f-c04376d92dac",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 98,
+          "code": "/min",
+          "unit": "/min"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Heart rate</td><td>29-Apr-2023</td><td>98 /min</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8867-4",
+              "system": "http://loinc.org",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "effectiveDateTime": "2023-04-29"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3e1cfe52-2638-4945-be39-0e6acd65d9d3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3e1cfe52-2638-4945-be39-0e6acd65d9d3",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 12,
+          "code": "/min",
+          "unit": "/min"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Respiratory rate</td><td>29-Apr-2023</td><td>12 /min</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "9279-1",
+              "system": "http://loinc.org",
+              "display": "Respiratory rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "effectiveDateTime": "2023-04-29"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:95494fd0-08e4-4353-9346-df7a60d41c1c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "95494fd0-08e4-4353-9346-df7a60d41c1c",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2093-3",
+              "system": "http://loinc.org",
+              "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Cholesterol [Mass/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 189.9,
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 130,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 200,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>29-Apr-2023</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Cholesterol [Mass/volume] in Serum or Plasma</td><td>189.9</td><td>130 - 200</td><td></td><td>mg/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "effectiveDateTime": "2023-04-29T12:03:24Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:19b75c06-6e2d-4014-9711-ea8c2202dd1f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "19b75c06-6e2d-4014-9711-ea8c2202dd1f",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2571-8",
+              "system": "http://loinc.org",
+              "display": "Triglyceride [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Triglyceride [Mass/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 141.5,
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 150,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>29-Apr-2023</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Triglyceride [Mass/volume] in Serum or Plasma</td><td>141.5</td><td>0 - 150</td><td></td><td>mg/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "effectiveDateTime": "2023-04-29T12:03:24Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:354b2ed5-fc0a-49bf-91fc-8aa336670ccc",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "354b2ed5-fc0a-49bf-91fc-8aa336670ccc",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "18262-6",
+              "system": "http://loinc.org",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay"
+            }
+          ],
+          "text": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 134,
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 130,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>29-Apr-2023</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay</td><td>134.0</td><td>0 - 130</td><td>H</td><td>mg/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "effectiveDateTime": "2023-04-29T12:03:24Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c42062af-6165-426d-aea8-8aee7a7696dc",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c42062af-6165-426d-aea8-8aee7a7696dc",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2085-9",
+              "system": "http://loinc.org",
+              "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 27.6,
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 40,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 60,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "L",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>29-Apr-2023</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Cholesterol in HDL [Mass/volume] in Serum or Plasma</td><td>27.6</td><td>40 - 60</td><td>L</td><td>mg/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:05cd94fc-471a-4543-87e2-26c82ba9817d",
+          "display": "Bob Madsen"
+        },
+        "effectiveDateTime": "2023-04-29T12:03:24Z"
+      }
+    }
+  ],
+  "type": "document",
+  "timestamp": "2023-04-29T12:03:24Z"
+}

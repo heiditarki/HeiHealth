@@ -1,0 +1,993 @@
+{
+  "resourceType": "Bundle",
+  "id": "eps-001-bundle",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/eps/StructureDefinition/bundle-eu-eps"
+    ]
+  },
+  "identifier": {
+    "assigner": {
+      "display": "HL7 Europe"
+    },
+    "system": "urn:oid:2.16.840.1.113883.2.51.999",
+    "value": "eps-001-bundle-id"
+  },
+  "type": "document",
+  "timestamp": "2023-11-15T10:00:00+02:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:composition-eps-001",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "composition-eps-001",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "TRAIN"
+            }
+          ],
+          "tag": [
+            {
+              "system": "https://synderai.net/fhir/CodeSystem/tags",
+              "code": "synthetic",
+              "display": "SYNDERAI Synthetic data"
+            }
+          ],
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/composition-eu-eps"
+          ]
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "60591-5",
+              "system": "http://loinc.org",
+              "display": "Patient summary Document"
+            }
+          ],
+          "text": "Patient summary Document"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "date": "2023-11-15",
+        "title": "European Patient Summary"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:patient-eps-001",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "eps-001",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "TRAIN"
+            }
+          ],
+          "tag": [
+            {
+              "system": "https://synderai.net/fhir/CodeSystem/tags",
+              "code": "synthetic",
+              "display": "SYNDERAI Synthetic data"
+            }
+          ],
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/patient-eu-eps"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "MR",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "urn:oid:1.2.246.21",
+            "value": "250178-123X"
+          }
+        ],
+        "name": [
+          {
+            "given": ["Albert"],
+            "family": "Knudsen",
+            "text": "Albert Knudsen"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1978-01-25",
+        "address": [
+          {
+            "line": ["Mannerheimintie 15"],
+            "use": "home",
+            "type": "physical",
+            "city": "Oulu",
+            "postalCode": "90100",
+            "country": "FI"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+358-50-123-4567"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "FI",
+                  "system": "http://hl7.org/fhir/ValueSet/country"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:condition-001",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-001",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "38341003",
+              "display": "Hypertensive disorder"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "I10",
+              "display": "Essential (primary) hypertension"
+            }
+          ],
+          "text": "Essential hypertension"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "onsetDateTime": "2020-03-15",
+        "recordedDate": "2020-03-20"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:condition-002",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-002",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "228049004",
+              "display": "Drug dependence"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "F19.2",
+              "display": "Mental and behavioural disorders due to multiple drug use and use of other psychoactive substances - dependence syndrome"
+            }
+          ],
+          "text": "Dependent drug abuse"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "onsetDateTime": "2018-06-01",
+        "recordedDate": "2018-06-10"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:immunization-001",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "imm-001",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "86198006",
+              "display": "Influenza virus vaccine"
+            }
+          ],
+          "text": "Influenza vaccine"
+        },
+        "patient": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "occurrenceDateTime": "2023-10-15",
+        "primarySource": true
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:immunization-002",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "imm-002",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1119349007",
+              "display": "Vaccine product containing SARS-CoV-2 mRNA"
+            }
+          ],
+          "text": "COVID-19 vaccine (mRNA)"
+        },
+        "patient": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "occurrenceDateTime": "2021-03-20",
+        "primarySource": true,
+        "protocolApplied": [
+          {
+            "doseNumber": "1"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:immunization-003",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "imm-003",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1119349007",
+              "display": "Vaccine product containing SARS-CoV-2 mRNA"
+            }
+          ],
+          "text": "COVID-19 vaccine (mRNA)"
+        },
+        "patient": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "occurrenceDateTime": "2021-04-17",
+        "primarySource": true,
+        "protocolApplied": [
+          {
+            "doseNumber": "2"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:immunization-004",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "imm-004",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1119349007",
+              "display": "Vaccine product containing SARS-CoV-2 mRNA"
+            }
+          ],
+          "text": "COVID-19 vaccine (mRNA)"
+        },
+        "patient": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "occurrenceDateTime": "2022-01-10",
+        "primarySource": true,
+        "protocolApplied": [
+          {
+            "doseNumber": "3"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:procedure-001",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "proc-001",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "390906007",
+              "display": "Follow-up encounter"
+            },
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "code": "96127",
+              "display": "Brief emotional/behavioral assessment"
+            }
+          ],
+          "text": "Depression screening"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "performedDateTime": "2023-09-12T10:30:00+02:00"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:procedure-002",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "proc-002",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "399208008",
+              "display": "Plain chest X-ray"
+            },
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "code": "73060",
+              "display": "Radiologic examination, clavicle, complete"
+            }
+          ],
+          "text": "Clavicle X-ray"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "performedDateTime": "2022-11-05T14:15:00+02:00",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "125605004",
+                "display": "Fracture of clavicle"
+              }
+            ],
+            "text": "Suspected clavicle fracture"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:careplan-001",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "cp-001",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/CarePlan-eu-eps"
+          ]
+        },
+        "status": "active",
+        "intent": "plan",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "734423003",
+                "display": "Lifestyle management"
+              }
+            ],
+            "text": "Lifestyle management"
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "created": "2020-03-20",
+        "addresses": [
+          {
+            "reference": "urn:uuid:condition-001",
+            "display": "Essential hypertension"
+          }
+        ],
+        "activity": [
+          {
+            "detail": {
+              "kind": "ServiceRequest",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "182836005",
+                    "display": "Health education"
+                  }
+                ],
+                "text": "Dietary counseling for hypertension"
+              },
+              "status": "scheduled",
+              "description": "Reduce sodium intake to less than 2g per day"
+            }
+          },
+          {
+            "detail": {
+              "kind": "ServiceRequest",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "182836005",
+                    "display": "Health education"
+                  }
+                ],
+                "text": "Exercise counseling"
+              },
+              "status": "scheduled",
+              "description": "Regular moderate-intensity exercise for at least 150 minutes per week"
+            }
+          },
+          {
+            "detail": {
+              "kind": "ServiceRequest",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "182836005",
+                    "display": "Health education"
+                  }
+                ],
+                "text": "Weight management"
+              },
+              "status": "scheduled",
+              "description": "Maintain BMI between 18.5 and 24.9"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:observation-001",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-001",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/Observation-eu-eps"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "effectiveDateTime": "2023-11-15T09:00:00+02:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 142,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 88,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:observation-002",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-002",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/Observation-eu-eps"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ],
+          "text": "BMI"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "effectiveDateTime": "2023-11-15T09:00:00+02:00",
+        "valueQuantity": {
+          "value": 28.5,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:observation-003",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-003",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol, Total"
+            }
+          ],
+          "text": "Total Cholesterol"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "effectiveDateTime": "2023-10-20T08:30:00+02:00",
+        "valueQuantity": {
+          "value": 5.8,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:observation-004",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-004",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2089-1",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "LDL Cholesterol"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "effectiveDateTime": "2023-10-20T08:30:00+02:00",
+        "valueQuantity": {
+          "value": 3.9,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:observation-005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-005",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "HDL Cholesterol"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "effectiveDateTime": "2023-10-20T08:30:00+02:00",
+        "valueQuantity": {
+          "value": 1.2,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L",
+                "display": "Low"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:observation-006",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-006",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2571-8",
+              "display": "Triglyceride [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Triglycerides"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "effectiveDateTime": "2023-10-20T08:30:00+02:00",
+        "valueQuantity": {
+          "value": 1.8,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:observation-007",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-007",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/Observation-eu-eps"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "effectiveDateTime": "2023-11-15T09:00:00+02:00",
+        "valueQuantity": {
+          "value": 85,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:observation-008",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-008",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/Observation-eu-eps"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            }
+          ],
+          "text": "Body Height"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-eps-001",
+          "display": "Albert Knudsen"
+        },
+        "effectiveDateTime": "2023-11-15T09:00:00+02:00",
+        "valueQuantity": {
+          "value": 173,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }
+    }
+  ]
+}

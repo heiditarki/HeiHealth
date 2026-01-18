@@ -1,0 +1,34 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 4,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "imm-001",
+        "status": "completed",
+        "vaccineCode": {
+          "text": "Influenza vaccine"
+        },
+        "occurrenceDateTime": "2023-10-15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "imm-002",
+        "status": "completed",
+        "vaccineCode": {
+          "text": "COVID-19 vaccine (mRNA)"
+        },
+        "occurrenceDateTime": "2021-03-20",
+        "protocolApplied": [
+          {
+            "doseNumber": "1"
+          }
+        ]
+      }
+    }
+  ]
+}

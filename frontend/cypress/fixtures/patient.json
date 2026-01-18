@@ -1,0 +1,31 @@
+{
+  "resourceType": "Patient",
+  "id": "eps-001",
+  "name": [
+    {
+      "given": ["Albert"],
+      "family": "Knudsen"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1978-01-25",
+  "address": [
+    {
+      "line": ["Mannerheimintie 15"],
+      "city": "Oulu",
+      "postalCode": "90100",
+      "country": "FI"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+358-50-123-4567"
+    }
+  ],
+  "identifier": [
+    {
+      "value": "250178-123X"
+    }
+  ]
+}

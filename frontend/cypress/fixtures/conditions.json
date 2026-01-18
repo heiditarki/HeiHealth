@@ -1,0 +1,51 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 2,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-001",
+        "code": {
+          "text": "Essential hypertension",
+          "coding": [
+            {
+              "display": "Essential hypertension"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
+        "onsetDateTime": "2020-03-15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-002",
+        "code": {
+          "text": "Dependent drug abuse",
+          "coding": [
+            {
+              "display": "Dependent drug abuse"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
+        "onsetDateTime": "2018-06-01"
+      }
+    }
+  ]
+}

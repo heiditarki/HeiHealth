@@ -1,0 +1,29 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 2,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "proc-001",
+        "status": "completed",
+        "code": {
+          "text": "Depression screening"
+        },
+        "performedDateTime": "2023-09-12T10:30:00+02:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "proc-002",
+        "status": "completed",
+        "code": {
+          "text": "Clavicle X-ray"
+        },
+        "performedDateTime": "2022-11-05T14:15:00+02:00"
+      }
+    }
+  ]
+}

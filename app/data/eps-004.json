@@ -1,0 +1,2767 @@
+{
+  "resourceType": "Bundle",
+  "id": "0b2ae7c2-50f8-4181-a955-c249513005ab",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/eps/StructureDefinition/bundle-eu-eps"
+    ]
+  },
+  "identifier": {
+    "assigner": {
+      "display": "HL7 Europe"
+    },
+    "system": "urn:oid:2.16.840.1.113883.2.51.999",
+    "value": "ff75abce-dce0-4dd8-9222-cf85a854892e"
+  },
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:1757d25c-24aa-4ec1-b261-e7666c21b08e",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "1757d25c-24aa-4ec1-b261-e7666c21b08e",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "TRAIN"
+            }
+          ],
+          "tag": [
+            {
+              "system": "https://synderai.net/fhir/CodeSystem/tags",
+              "code": "synthetic",
+              "display": "SYNDERAI Synthetic data"
+            }
+          ],
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/composition-eu-eps"
+          ]
+        },
+        "identifier": {
+          "assigner": {
+            "display": "HL7 Europe"
+          },
+          "system": "urn:oid:2.16.840.1.113883.2.51.999",
+          "value": "d94fc31f-6240-4c37-87d6-0756dead81df"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "60591-5",
+              "system": "http://loinc.org",
+              "display": "Patient summary Document"
+            }
+          ],
+          "text": "Patient summary Document"
+        },
+        "author": [
+          {
+            "reference": "urn:uuid:91c396ec-dc5b-485b-80ec-f58d279708ff"
+          }
+        ],
+        "section": [
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Condition</th><th>Onset Date</th><th>Status</th></tr><tr><td>Ischemic heart disease</td><td><span class=\"nb\">02-Apr-2009</span></td><td>active</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:7c49f16d-8096-4dc2-ab25-5c2749494737"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4",
+                  "display": "Problem list - Reported"
+                }
+              ]
+            },
+            "title": "Problem list"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>No known medications</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:8a0261d5-7209-4a45-ab0a-837b737b5f2d"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10160-0",
+                  "display": "History of Medication use Narrative"
+                }
+              ]
+            },
+            "title": "Medication list"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vaccine</th><th>Date</th></tr><tr><td>Streptococcus pneumoniae Danish serotype 1</td><td><span class=\"nb\">03-Jul-2025</span></td></tr><tr><td>Influenza virus antigen only vaccine product</td><td><span class=\"nb\">03-Jul-2025</span></td></tr><tr><td>Streptococcus pneumoniae Danish serotype 1</td><td><span class=\"nb\">27-Jun-2024</span></td></tr><tr><td>SARS-CoV-2 mRNA vaccine</td><td><span class=\"nb\">10-Jun-2021</span></td></tr><tr><td>Clostridium tetani toxoid antigen adsorbed only vaccine product</td><td><span class=\"nb\">04-Jun-2020</span></td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:652a6016-3ea1-4973-b3e9-80ae03e63e17"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11369-6",
+                  "display": "History of Immunization note"
+                }
+              ]
+            },
+            "title": "Immunizations list"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Procedure</th><th>Date</th><th>Reason</th></tr><tr><td>Suture open wound</td><td><span class=\"nb\">17-Jan-2023</span></td><td>Laceration of forearm</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:ed2ec8bd-3eb8-47a2-badd-957e90353b05"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "47519-4",
+                  "display": "History of Procedures Document"
+                }
+              ]
+            },
+            "title": "Procedure History list"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Allergy/Intolerance</th><th>Onset Date</th><th>Status</th><th>Type</th><th>Reaction</th></tr><tr><td></td><td>?</td><td>active</td><td>?</td><td></td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:1fecfde3-2126-470b-a217-7fe8b8c5be71"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48765-2",
+                  "display": "Allergies and adverse reactions Document"
+                }
+              ]
+            },
+            "title": "Allergies and Intolerances"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Signs</th><th>2025-07-03</th><th>2024-06-27</th></tr><tr><td>Body Height</td><td>181.2 cm</td><td>181.2 cm</td></tr><tr><td>Pain severity - 0-10 verbal numeric rating [Score] - Reported</td><td>3 {score}</td><td>1 {score}</td></tr><tr><td>Body Weight</td><td>92.1 kg</td><td>91.1 kg</td></tr><tr><td>Body mass index (BMI) [Ratio]</td><td>28 kg/m2</td><td>27.7 kg/m2</td></tr><tr><td>Diastolic Blood Pressure</td><td>65 mm[Hg]</td><td>61 mm[Hg]</td></tr><tr><td>Systolic Blood Pressure</td><td>97 mm[Hg]</td><td>102 mm[Hg]</td></tr><tr><td>Heart rate</td><td>66 /min</td><td>84 /min</td></tr><tr><td>Respiratory rate</td><td>13 /min</td><td>13 /min</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:bac23917-64ce-46eb-b966-bcff353712be"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8716-3",
+                  "display": "Vital signs note"
+                }
+              ]
+            },
+            "title": "Vital Signs"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><table class=\"hl7__ips\"><thead><tr><th>Recent Lab Observations</th><th>03-JUL-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr></thead><tbody><tr><td>Leukocytes [#/volume] in Blood by Automated count</td><td>8.2</td><td>3.4 - 10.6</td><td>10*3/uL</td></tr><tr><td>Erythrocytes [#/volume] in Blood by Automated count</td><td>5.1</td><td>4.82 - 5.72</td><td>10*6/uL</td></tr><tr><td>Hemoglobin [Mass/volume] in Blood</td><td><strong>12.4 L</strong></td><td>13.5 - 17.5</td><td>g/dL</td></tr><tr><td>Hematocrit [Volume Fraction] of Blood by Automated count</td><td>44.7</td><td>37 - 52</td><td>%</td></tr><tr><td>MCV [Entitic volume] by Automated count</td><td>82.4</td><td>82 - 98</td><td>fL</td></tr><tr><td>MCH [Entitic mass] by Automated count</td><td>32.1</td><td>27 - 33</td><td>pg</td></tr><tr><td>MCHC [Mass/volume] by Automated count</td><td>35.8</td><td>32 - 37</td><td>g/dL</td></tr><tr><td>Erythrocyte distribution width [Entitic volume] by Automated count</td><td>44.9</td><td>39 - 55</td><td>fL</td></tr><tr><td>Platelets [#/volume] in Blood by Automated count</td><td>303.3</td><td>150 - 344</td><td>10*3/uL</td></tr><tr><td>Platelet distribution width [Entitic volume] in Blood by Automated count</td><td><strong>443.2 H</strong></td><td>13.4 - 17.4</td><td>fL</td></tr><tr><td>Platelet mean volume [Entitic volume] in Blood by Automated count</td><td>11.6</td><td>7.2 - 13.5</td><td>fL</td></tr></tbody></table></table></div>"
+            },
+            "title": "Relevant diagnostic tests/laboratory data",
+            "code": {
+              "coding": [
+                {
+                  "code": "30954-2",
+                  "system": "http://loinc.org",
+                  "display": "Relevant diagnostic tests/laboratory data note"
+                }
+              ]
+            }
+          }
+        ],
+        "title": "European Patient Summary",
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "custodian": {
+          "reference": "urn:uuid:913fc172-f33d-4ee0-b852-bf65cfa9fc9d"
+        },
+        "date": "2025-07-03",
+        "confidentiality": "N"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "cd0e275a-9912-42f8-bbd8-be3348affd09",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "TRAIN"
+            }
+          ],
+          "tag": [
+            {
+              "system": "https://synderai.net/fhir/CodeSystem/tags",
+              "code": "synthetic",
+              "display": "SYNDERAI Synthetic data"
+            }
+          ],
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/patient-eu-eps"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "PT",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://ec.europa.eu/identifier/eci",
+            "value": "2387-739099-9"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "MR",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://local.setting.eu/identifier",
+            "value": "d6a2ee9c-858a-5c6d-07e0-4ae790c469f7"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Alwin"
+            ],
+            "family": "Wernecke",
+            "text": "Alwin Wernecke"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "Serpil-Gröttner-Ring 1/7"
+            ],
+            "use": "home",
+            "type": "physical",
+            "postalCode": "93444",
+            "city": "Kötzting",
+            "country": "Germany"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+49(0)3416 61990"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "DE",
+                  "system": "http://hl7.org/fhir/ValueSet/country"
+                }
+              ]
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Alwin Wernecke</td><td>male</td><td>04-Jun-1962</td></tr></table></div>"
+        },
+        "gender": "male",
+        "birthDate": "1962-06-04"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:91c396ec-dc5b-485b-80ec-f58d279708ff",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "91c396ec-dc5b-485b-80ec-f58d279708ff",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\">Provider Role Id 91c396ec-dc5b-485b-80ec-f58d279708ff</table></div>"
+        },
+        "practitioner": {
+          "reference": "urn:uuid:453b205d-f707-4985-a4c5-e54149a704a8"
+        },
+        "organization": {
+          "reference": "urn:uuid:913fc172-f33d-4ee0-b852-bf65cfa9fc9d"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:913fc172-f33d-4ee0-b852-bf65cfa9fc9d",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "913fc172-f33d-4ee0-b852-bf65cfa9fc9d",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/base/StructureDefinition/organization-eu"
+          ]
+        },
+        "identifier": [
+          {
+            "assigner": {
+              "display": "HL7 Europe"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.51.999",
+            "value": "6a4482dc-5586-4f33-903a-db1d5d9a2168"
+          }
+        ],
+        "address": [
+          {
+            "city": "Bad Kötzting",
+            "postalCode": "93444",
+            "country": "Germany"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\">Sana Kliniken des Landkreises Cham</table></div>"
+        },
+        "name": "Sana Kliniken des Landkreises Cham"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:453b205d-f707-4985-a4c5-e54149a704a8",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "453b205d-f707-4985-a4c5-e54149a704a8",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu"
+          ]
+        },
+        "name": [
+          {
+            "prefix": [
+              "Dr."
+            ],
+            "given": [
+              "Hel"
+            ],
+            "family": "Ping"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\">Dr. Hel Ping</table></div>"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7c49f16d-8096-4dc2-ab25-5c2749494737",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "7c49f16d-8096-4dc2-ab25-5c2749494737",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "414545008",
+              "system": "http://snomed.info/sct",
+              "display": "Ischemic heart disease (disorder)"
+            }
+          ],
+          "text": "Ischemic heart disease"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Ischemic heart disease</td><td><span class=\"nb\">02-Apr-2009</span></td><td>active</td></tr></table></div>"
+        },
+        "onsetDateTime": "2009-04-02",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "asserter": {
+          "reference": "urn:uuid:91c396ec-dc5b-485b-80ec-f58d279708ff",
+          "display": "Sana Kliniken des Landkreises Cham"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:53bb44ff-db4e-4520-95c8-0336c271ed55",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "53bb44ff-db4e-4520-95c8-0336c271ed55",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "10509002",
+              "system": "http://snomed.info/sct",
+              "display": "Acute bronchitis (disorder)"
+            }
+          ],
+          "text": "Acute bronchitis"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td><span class=\"grayedout\">Acute bronchitis</span></td><td><span class=\"nb\">07-Jun-2023 - 17-Jun-2023</span></td><td><span class=\"grayedout\">inactive</span></td></tr></table></div>"
+        },
+        "onsetDateTime": "2023-06-07",
+        "abatementDateTime": "2023-06-17",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "asserter": {
+          "reference": "urn:uuid:91c396ec-dc5b-485b-80ec-f58d279708ff",
+          "display": "Sana Kliniken des Landkreises Cham"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3fd7f185-8f41-4de7-a36a-ceab54069f48",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "3fd7f185-8f41-4de7-a36a-ceab54069f48",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "283371005",
+              "system": "http://snomed.info/sct",
+              "display": "Laceration of forearm (disorder)"
+            }
+          ],
+          "text": "Laceration of forearm"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td><span class=\"grayedout\">Laceration of forearm</span></td><td><span class=\"nb\">17-Jan-2023 - 01-Feb-2023</span></td><td><span class=\"grayedout\">inactive</span></td></tr></table></div>"
+        },
+        "onsetDateTime": "2023-01-17",
+        "abatementDateTime": "2023-02-01",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "asserter": {
+          "reference": "urn:uuid:91c396ec-dc5b-485b-80ec-f58d279708ff",
+          "display": "Sana Kliniken des Landkreises Cham"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:de809ef1-1da2-4130-8c06-3aef7416d387",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "de809ef1-1da2-4130-8c06-3aef7416d387",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "312608009",
+              "system": "http://snomed.info/sct",
+              "display": "Laceration - injury (disorder)"
+            }
+          ],
+          "text": "Laceration - injury"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td><span class=\"grayedout\">Laceration - injury</span></td><td><span class=\"nb\">17-Jan-2023 - 01-Feb-2023</span></td><td><span class=\"grayedout\">inactive</span></td></tr></table></div>"
+        },
+        "onsetDateTime": "2023-01-17",
+        "abatementDateTime": "2023-02-01",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "asserter": {
+          "reference": "urn:uuid:91c396ec-dc5b-485b-80ec-f58d279708ff",
+          "display": "Sana Kliniken des Landkreises Cham"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a8c14878-b567-466a-b15b-58b75892e1fe",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "a8c14878-b567-466a-b15b-58b75892e1fe",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "444814009",
+              "system": "http://snomed.info/sct",
+              "display": "Viral sinusitis (disorder)"
+            }
+          ],
+          "text": "Viral sinusitis"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td><span class=\"grayedout\">Viral sinusitis</span></td><td><span class=\"nb\">08-Feb-2020 - 24-Feb-2020</span></td><td><span class=\"grayedout\">inactive</span></td></tr></table></div>"
+        },
+        "onsetDateTime": "2020-02-08",
+        "abatementDateTime": "2020-02-24",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "asserter": {
+          "reference": "urn:uuid:91c396ec-dc5b-485b-80ec-f58d279708ff",
+          "display": "Sana Kliniken des Landkreises Cham"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cf3abe13-c0a2-4983-96e5-1ad529474fbd",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cf3abe13-c0a2-4983-96e5-1ad529474fbd",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "444814009",
+              "system": "http://snomed.info/sct",
+              "display": "Viral sinusitis (disorder)"
+            }
+          ],
+          "text": "Viral sinusitis"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td><span class=\"grayedout\">Viral sinusitis</span></td><td><span class=\"nb\">23-Feb-2019 - 09-Mar-2019</span></td><td><span class=\"grayedout\">inactive</span></td></tr></table></div>"
+        },
+        "onsetDateTime": "2019-02-23",
+        "abatementDateTime": "2019-03-09",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "asserter": {
+          "reference": "urn:uuid:91c396ec-dc5b-485b-80ec-f58d279708ff",
+          "display": "Sana Kliniken des Landkreises Cham"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:684e89ec-88a8-4666-95bb-38622c235066",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "684e89ec-88a8-4666-95bb-38622c235066",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "10509002",
+              "system": "http://snomed.info/sct",
+              "display": "Acute bronchitis (disorder)"
+            }
+          ],
+          "text": "Acute bronchitis"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td><span class=\"grayedout\">Acute bronchitis</span></td><td><span class=\"nb\">24-Mar-2016 - 07-Apr-2016</span></td><td><span class=\"grayedout\">inactive</span></td></tr></table></div>"
+        },
+        "onsetDateTime": "2016-03-24",
+        "abatementDateTime": "2016-04-07",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "asserter": {
+          "reference": "urn:uuid:91c396ec-dc5b-485b-80ec-f58d279708ff",
+          "display": "Sana Kliniken des Landkreises Cham"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8a0261d5-7209-4a45-ab0a-837b737b5f2d",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "8a0261d5-7209-4a45-ab0a-837b737b5f2d",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/MedicationStatement-eu-eps"
+          ]
+        },
+        "effectivePeriod": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "787481004",
+              "system": "http://snomed.info/sct",
+              "display": "No known medications (situation)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:652a6016-3ea1-4973-b3e9-80ae03e63e17",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "652a6016-3ea1-4973-b3e9-80ae03e63e17",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "1252709000",
+              "system": "http://snomed.info/sct",
+              "display": "Vaccine product containing Streptococcus pneumoniae capsular polysaccharide antigens conjugated"
+            },
+            {
+              "code": "J07AL01",
+              "system": "http://www.whocc.no/atc",
+              "display": "Pneumococcal polysaccharide vaccines"
+            }
+          ],
+          "text": "Streptococcus pneumoniae Danish serotype 1"
+        },
+        "site": {
+          "coding": [
+            {
+              "code": "244979005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire muscle of upper arm"
+            }
+          ],
+          "text": "Entire muscle of upper arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "code": "78421000",
+              "system": "http://snomed.info/sct",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular route"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Streptococcus pneumoniae Danish serotype 1</td><td><span class=\"nb\">03-Jul-2025</span></td></tr></table></div>"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "occurrenceDateTime": "2025-07-03",
+        "lotNumber": "JT-4D6RJkg",
+        "expirationDate": "2026-02-24"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:764bdfd6-edcf-4c4c-af06-458cc68dc48f",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "764bdfd6-edcf-4c4c-af06-458cc68dc48f",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "1181000221105",
+              "system": "http://snomed.info/sct",
+              "display": "Vaccine product containing Influenza virus antigen"
+            },
+            {
+              "code": "J07BB02",
+              "system": "http://www.whocc.no/atc",
+              "display": "Influenza, inactivated, split virus"
+            }
+          ],
+          "text": "Influenza virus antigen only vaccine product"
+        },
+        "site": {
+          "coding": [
+            {
+              "code": "244979005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire muscle of upper arm"
+            }
+          ],
+          "text": "Entire muscle of upper arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "code": "78421000",
+              "system": "http://snomed.info/sct",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular route"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Influenza virus antigen only vaccine product</td><td><span class=\"nb\">03-Jul-2025</span></td></tr></table></div>"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "occurrenceDateTime": "2025-07-03",
+        "lotNumber": "MJ-vadxlAiIb",
+        "expirationDate": "2026-03-15"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0e67db36-6796-4e88-b4da-114e5dcf6c34",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "0e67db36-6796-4e88-b4da-114e5dcf6c34",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "51451000087105",
+              "system": "http://snomed.info/sct",
+              "display": "Vaccine product containing Streptococcus pneumoniae capsular polysaccharide antigens conjugated"
+            },
+            {
+              "code": "J07AL02",
+              "system": "http://www.whocc.no/atc",
+              "display": "Pneumococcal conjugate vaccines"
+            }
+          ],
+          "text": "Streptococcus pneumoniae Danish serotype 1"
+        },
+        "site": {
+          "coding": [
+            {
+              "code": "244979005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire muscle of upper arm"
+            }
+          ],
+          "text": "Entire muscle of upper arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "code": "78421000",
+              "system": "http://snomed.info/sct",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular route"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Streptococcus pneumoniae Danish serotype 1</td><td><span class=\"nb\">27-Jun-2024</span></td></tr></table></div>"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "occurrenceDateTime": "2024-06-27",
+        "lotNumber": "DK-9AFz9PUwU",
+        "expirationDate": "2024-10-11"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:920f99f7-8fc6-4457-ac57-b74329b98de7",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "920f99f7-8fc6-4457-ac57-b74329b98de7",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "1119349007",
+              "system": "http://snomed.info/sct",
+              "display": "Vaccine product containing SARS-CoV-2 mRNA"
+            },
+            {
+              "code": "J07BX03",
+              "system": "http://www.whocc.no/atc",
+              "display": "COVID-19 mRNA vaccines"
+            }
+          ],
+          "text": "SARS-CoV-2 mRNA vaccine"
+        },
+        "site": {
+          "coding": [
+            {
+              "code": "244979005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire muscle of upper arm"
+            }
+          ],
+          "text": "Entire muscle of upper arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "code": "78421000",
+              "system": "http://snomed.info/sct",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular route"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>SARS-CoV-2 mRNA vaccine</td><td><span class=\"nb\">10-Jun-2021</span></td></tr></table></div>"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "occurrenceDateTime": "2021-06-10",
+        "lotNumber": "XP-1otAg",
+        "expirationDate": "2022-02-23"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:16d001a3-80ad-4da9-8ccf-3858f8743073",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "16d001a3-80ad-4da9-8ccf-3858f8743073",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "777725002",
+              "system": "http://snomed.info/sct",
+              "display": "Vaccine product containing only Clostridium tetani toxoid antigen adsorbed"
+            },
+            {
+              "code": "J07AM51",
+              "system": "http://www.whocc.no/atc",
+              "display": "Diphtheria-tetanus vaccines, adult type"
+            }
+          ],
+          "text": "Clostridium tetani toxoid antigen adsorbed only vaccine product"
+        },
+        "site": {
+          "coding": [
+            {
+              "code": "244979005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire muscle of upper arm"
+            }
+          ],
+          "text": "Entire muscle of upper arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "code": "78421000",
+              "system": "http://snomed.info/sct",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular route"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Clostridium tetani toxoid antigen adsorbed only vaccine product</td><td><span class=\"nb\">04-Jun-2020</span></td></tr></table></div>"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "occurrenceDateTime": "2020-06-04",
+        "lotNumber": "XR-8ng9KP",
+        "expirationDate": "2021-05-05"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ed2ec8bd-3eb8-47a2-badd-957e90353b05",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "ed2ec8bd-3eb8-47a2-badd-957e90353b05",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "288086009",
+              "system": "http://snomed.info/sct",
+              "display": "Suture open wound"
+            }
+          ],
+          "text": "Suture open wound"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "283371005",
+                "system": "http://snomed.info/sct",
+                "display": "Laceration of forearm"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Suture open wound</td><td><span class=\"nb\">17-Jan-2023</span></td><td>Laceration of forearm</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2023-01-17",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1fecfde3-2126-470b-a217-7fe8b8c5be71",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1fecfde3-2126-470b-a217-7fe8b8c5be71",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core"
+          ]
+        },
+        "code": {
+          "text": ""
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+            }
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Allergy/Intolerance</th><th>Onset Date</th><th>Status</th><th>Type</th><th>Reaction</th></tr><tr><td></td><td>?</td><td>active</td><td>?</td><td></td></tr></table></div>"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "_onsetDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bac23917-64ce-46eb-b966-bcff353712be",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bac23917-64ce-46eb-b966-bcff353712be",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 181.2,
+          "code": "cm",
+          "unit": "cm"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body Height</td><td>03-Jul-2025</td><td>181.2 cm</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8302-2",
+              "system": "http://loinc.org",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fffede25-2025-4e9b-a2c6-7f1dc119a7f3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fffede25-2025-4e9b-a2c6-7f1dc119a7f3",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 3,
+          "code": "{score}",
+          "unit": "{score}"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Pain severity - 0-10 verbal numeric rating [Score] - Reported</td><td>03-Jul-2025</td><td>3 {score}</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "72514-3",
+              "system": "http://loinc.org",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:75412d35-2a2a-483c-a532-27d744f28d67",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "75412d35-2a2a-483c-a532-27d744f28d67",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 92.1,
+          "code": "kg",
+          "unit": "kg"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body Weight</td><td>03-Jul-2025</td><td>92.1 kg</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "29463-7",
+              "system": "http://loinc.org",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:98733892-d788-4891-9802-79645b834524",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "98733892-d788-4891-9802-79645b834524",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 28,
+          "code": "kg/m2",
+          "unit": "kg/m2"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body mass index (BMI) [Ratio]</td><td>03-Jul-2025</td><td>28 kg/m2</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "39156-5",
+              "system": "http://loinc.org",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7b29eb8e-0ebb-4734-8074-0344509d4620",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7b29eb8e-0ebb-4734-8074-0344509d4620",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 65,
+          "code": "mm[Hg]",
+          "unit": "mm[Hg]"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Diastolic Blood Pressure</td><td>03-Jul-2025</td><td>65 mm[Hg]</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8462-4",
+              "system": "http://loinc.org",
+              "display": "Diastolic Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:aae87d04-b0e2-439d-a1b2-1eaf2d1b7e6d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "aae87d04-b0e2-439d-a1b2-1eaf2d1b7e6d",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 97,
+          "code": "mm[Hg]",
+          "unit": "mm[Hg]"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Systolic Blood Pressure</td><td>03-Jul-2025</td><td>97 mm[Hg]</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8480-6",
+              "system": "http://loinc.org",
+              "display": "Systolic Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:52424df4-5a83-4773-aa9c-bf9ecd848103",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "52424df4-5a83-4773-aa9c-bf9ecd848103",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 66,
+          "code": "/min",
+          "unit": "/min"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Heart rate</td><td>03-Jul-2025</td><td>66 /min</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8867-4",
+              "system": "http://loinc.org",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a9167e49-cc15-496f-9579-31f103c29e75",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a9167e49-cc15-496f-9579-31f103c29e75",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 13,
+          "code": "/min",
+          "unit": "/min"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Respiratory rate</td><td>03-Jul-2025</td><td>13 /min</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "9279-1",
+              "system": "http://loinc.org",
+              "display": "Respiratory rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a8fedf3b-ec02-4fc3-8281-5269a5efbb68",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a8fedf3b-ec02-4fc3-8281-5269a5efbb68",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 181.2,
+          "code": "cm",
+          "unit": "cm"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body Height</td><td>27-Jun-2024</td><td>181.2 cm</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8302-2",
+              "system": "http://loinc.org",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2024-06-27"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5cadbc63-e018-45ec-8c24-a77b857ff665",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5cadbc63-e018-45ec-8c24-a77b857ff665",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 1,
+          "code": "{score}",
+          "unit": "{score}"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Pain severity - 0-10 verbal numeric rating [Score] - Reported</td><td>27-Jun-2024</td><td>1 {score}</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "72514-3",
+              "system": "http://loinc.org",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2024-06-27"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:440765f1-1bea-4900-b97e-dcc472041420",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "440765f1-1bea-4900-b97e-dcc472041420",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 91.1,
+          "code": "kg",
+          "unit": "kg"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body Weight</td><td>27-Jun-2024</td><td>91.1 kg</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "29463-7",
+              "system": "http://loinc.org",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2024-06-27"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2c4b9b5a-aec6-422a-9973-ff0cb87a19c3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2c4b9b5a-aec6-422a-9973-ff0cb87a19c3",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 27.7,
+          "code": "kg/m2",
+          "unit": "kg/m2"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body mass index (BMI) [Ratio]</td><td>27-Jun-2024</td><td>27.7 kg/m2</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "39156-5",
+              "system": "http://loinc.org",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2024-06-27"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:30c7bb66-9e69-4eb7-89aa-cd741c976b0a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "30c7bb66-9e69-4eb7-89aa-cd741c976b0a",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 61,
+          "code": "mm[Hg]",
+          "unit": "mm[Hg]"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Diastolic Blood Pressure</td><td>27-Jun-2024</td><td>61 mm[Hg]</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8462-4",
+              "system": "http://loinc.org",
+              "display": "Diastolic Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2024-06-27"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:46666ad4-6916-4948-9f78-cda9bfb5a244",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "46666ad4-6916-4948-9f78-cda9bfb5a244",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 102,
+          "code": "mm[Hg]",
+          "unit": "mm[Hg]"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Systolic Blood Pressure</td><td>27-Jun-2024</td><td>102 mm[Hg]</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8480-6",
+              "system": "http://loinc.org",
+              "display": "Systolic Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2024-06-27"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:79d3e2a3-0937-452f-93c7-9cc47f23ed6f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "79d3e2a3-0937-452f-93c7-9cc47f23ed6f",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 84,
+          "code": "/min",
+          "unit": "/min"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Heart rate</td><td>27-Jun-2024</td><td>84 /min</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8867-4",
+              "system": "http://loinc.org",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2024-06-27"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:53f3ece4-c742-4cba-ade4-125bd8b66979",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "53f3ece4-c742-4cba-ade4-125bd8b66979",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 13,
+          "code": "/min",
+          "unit": "/min"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Respiratory rate</td><td>27-Jun-2024</td><td>13 /min</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "9279-1",
+              "system": "http://loinc.org",
+              "display": "Respiratory rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2024-06-27"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1fdb6496-58f2-4eac-9393-fba71d50c15b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1fdb6496-58f2-4eac-9393-fba71d50c15b",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "6690-2",
+              "system": "http://loinc.org",
+              "display": "Leukocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Leukocytes [#/volume] in Blood by Automated count"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 8.2,
+          "unit": "10*3/uL",
+          "code": "10*3/uL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 3.4,
+              "code": "10*3/uL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 10.6,
+              "code": "10*3/uL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>03-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Leukocytes [#/volume] in Blood by Automated count</td><td>8.2</td><td>3.4 - 10.6</td><td></td><td>10*3/uL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03T08:05:42Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d86220d7-8f33-4295-8c53-e4784af431e5",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d86220d7-8f33-4295-8c53-e4784af431e5",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "789-8",
+              "system": "http://loinc.org",
+              "display": "Erythrocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Erythrocytes [#/volume] in Blood by Automated count"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 5.1,
+          "unit": "10*6/uL",
+          "code": "10*6/uL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 4.82,
+              "code": "10*6/uL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 5.72,
+              "code": "10*6/uL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>03-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Erythrocytes [#/volume] in Blood by Automated count</td><td>5.1</td><td>4.82 - 5.72</td><td></td><td>10*6/uL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03T08:05:42Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2be2fef4-9626-480c-969f-4b8fabf4e67f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2be2fef4-9626-480c-969f-4b8fabf4e67f",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "718-7",
+              "system": "http://loinc.org",
+              "display": "Hemoglobin [Mass/volume] in Blood"
+            }
+          ],
+          "text": "Hemoglobin [Mass/volume] in Blood"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 12.4,
+          "unit": "g/dL",
+          "code": "g/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 13.5,
+              "code": "g/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 17.5,
+              "code": "g/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "L",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>03-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Hemoglobin [Mass/volume] in Blood</td><td>12.4</td><td>13.5 - 17.5</td><td>L</td><td>g/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03T08:05:42Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0b8596ce-b89e-45c2-9c05-cf044470348d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0b8596ce-b89e-45c2-9c05-cf044470348d",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "4544-3",
+              "system": "http://loinc.org",
+              "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+            }
+          ],
+          "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 44.7,
+          "unit": "%",
+          "code": "%"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 37,
+              "code": "%",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 52,
+              "code": "%",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>03-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Hematocrit [Volume Fraction] of Blood by Automated count</td><td>44.7</td><td>37 - 52</td><td></td><td>%</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03T08:05:42Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1e3a3a29-5aa8-4ca1-ab50-5cacf0dd7aae",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1e3a3a29-5aa8-4ca1-ab50-5cacf0dd7aae",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "787-2",
+              "system": "http://loinc.org",
+              "display": "MCV [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "MCV [Entitic volume] by Automated count"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 82.4,
+          "unit": "fL",
+          "code": "fL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 82,
+              "code": "fL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 98,
+              "code": "fL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>03-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>MCV [Entitic volume] by Automated count</td><td>82.4</td><td>82 - 98</td><td></td><td>fL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03T08:05:42Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:42772529-c91f-4410-8222-e7e633d30f1e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "42772529-c91f-4410-8222-e7e633d30f1e",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "785-6",
+              "system": "http://loinc.org",
+              "display": "MCH [Entitic mass] by Automated count"
+            }
+          ],
+          "text": "MCH [Entitic mass] by Automated count"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 32.1,
+          "unit": "pg",
+          "code": "pg"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 27,
+              "code": "pg",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 33,
+              "code": "pg",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>03-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>MCH [Entitic mass] by Automated count</td><td>32.1</td><td>27 - 33</td><td></td><td>pg</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03T08:05:42Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9a423040-c57e-4c8a-b833-253803499839",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9a423040-c57e-4c8a-b833-253803499839",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "786-4",
+              "system": "http://loinc.org",
+              "display": "MCHC [Mass/volume] by Automated count"
+            }
+          ],
+          "text": "MCHC [Mass/volume] by Automated count"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 35.8,
+          "unit": "g/dL",
+          "code": "g/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 32,
+              "code": "g/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 37,
+              "code": "g/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>03-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>MCHC [Mass/volume] by Automated count</td><td>35.8</td><td>32 - 37</td><td></td><td>g/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03T08:05:42Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d2a48bcb-e0e4-4852-b159-81b188e7c78d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d2a48bcb-e0e4-4852-b159-81b188e7c78d",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "21000-5",
+              "system": "http://loinc.org",
+              "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 44.9,
+          "unit": "fL",
+          "code": "fL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 39,
+              "code": "fL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 55,
+              "code": "fL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>03-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Erythrocyte distribution width [Entitic volume] by Automated count</td><td>44.9</td><td>39 - 55</td><td></td><td>fL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03T08:05:42Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5f248a3a-aac9-4893-a4aa-b6c2bc8bd785",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5f248a3a-aac9-4893-a4aa-b6c2bc8bd785",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "777-3",
+              "system": "http://loinc.org",
+              "display": "Platelets [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Platelets [#/volume] in Blood by Automated count"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 303.3,
+          "unit": "10*3/uL",
+          "code": "10*3/uL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 150,
+              "code": "10*3/uL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 344,
+              "code": "10*3/uL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>03-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Platelets [#/volume] in Blood by Automated count</td><td>303.3</td><td>150 - 344</td><td></td><td>10*3/uL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03T08:05:42Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5f7fd315-7ad8-44ed-bcdc-ece7ac842e5a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5f7fd315-7ad8-44ed-bcdc-ece7ac842e5a",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "32207-3",
+              "system": "http://loinc.org",
+              "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 443.2,
+          "unit": "fL",
+          "code": "fL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 13.4,
+              "code": "fL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 17.4,
+              "code": "fL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>03-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Platelet distribution width [Entitic volume] in Blood by Automated count</td><td>443.2</td><td>13.4 - 17.4</td><td>H</td><td>fL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03T08:05:42Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:58ceecaf-d114-474a-9dc8-225194ec3098",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "58ceecaf-d114-474a-9dc8-225194ec3098",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "32623-1",
+              "system": "http://loinc.org",
+              "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 11.6,
+          "unit": "fL",
+          "code": "fL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 7.2,
+              "code": "fL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 13.5,
+              "code": "fL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>03-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Platelet mean volume [Entitic volume] in Blood by Automated count</td><td>11.6</td><td>7.2 - 13.5</td><td></td><td>fL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:cd0e275a-9912-42f8-bbd8-be3348affd09",
+          "display": "Alwin Wernecke"
+        },
+        "effectiveDateTime": "2025-07-03T08:05:42Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e02e645e-1c2f-41a3-a195-8e7e2a884044",
+      "resource": {
+        "resourceType": "Device",
+        "id": "e02e645e-1c2f-41a3-a195-8e7e2a884044",
+        "deviceName": [
+          {
+            "name": "SYNDERAI Synthetic Generator",
+            "type": "manufacturer-name"
+          }
+        ],
+        "version": [
+          {
+            "value": "5.0"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">SYNDERAI Synthetic Generator v5.0</div>"
+        },
+        "status": "active",
+        "distinctIdentifier": "synderai-generator-50",
+        "manufacturer": "SYNDERAI Project"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5d507d0e-11e8-4dbc-8f9c-e79b5217749f",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "5d507d0e-11e8-4dbc-8f9c-e79b5217749f",
+        "target": [
+          {
+            "reference": "Patient/cd0e275a-9912-42f8-bbd8-be3348affd09"
+          },
+          {
+            "reference": "Bundle/0b2ae7c2-50f8-4181-a955-c249513005ab"
+          },
+          {
+            "reference": "Composition/1757d25c-24aa-4ec1-b261-e7666c21b08e"
+          },
+          {
+            "reference": "PractitionerRole/91c396ec-dc5b-485b-80ec-f58d279708ff"
+          },
+          {
+            "reference": "Organization/913fc172-f33d-4ee0-b852-bf65cfa9fc9d"
+          },
+          {
+            "reference": "Practitioner/453b205d-f707-4985-a4c5-e54149a704a8"
+          }
+        ],
+        "activity": {
+          "text": "Synthetic Example Data Generation"
+        },
+        "policy": [
+          "https://synderai.net/synderai-synthetic-data-policy"
+        ],
+        "agent": [
+          {
+            "type": {
+              "text": "author"
+            },
+            "who": {
+              "reference": "Device/e02e645e-1c2f-41a3-a195-8e7e2a884044"
+            }
+          }
+        ],
+        "reason": [
+          {
+            "text": "Interoperability Testing and Training (non-clinical use)"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Provenance for SYNDERAI Synthetic Example Data Resource</div>"
+        },
+        "recorded": "2025-07-03T08:05:42Z"
+      }
+    }
+  ],
+  "type": "document",
+  "timestamp": "2025-07-03T08:05:42Z"
+}

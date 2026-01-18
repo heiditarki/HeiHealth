@@ -1,0 +1,25 @@
+{
+  "name": "heihealth",
+  "version": "1.0.0",
+  "description": "HeiHealth - European Patient Summary visualization",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8",
+    "cypress": "^13.6.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:ci": "cypress run --headless --browser chrome"
+  }
+}

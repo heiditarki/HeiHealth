@@ -1,0 +1,4722 @@
+{
+  "resourceType": "Bundle",
+  "id": "36293bef-dc2b-4f7b-83a0-821651410606",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/eps/StructureDefinition/bundle-eu-eps"
+    ]
+  },
+  "identifier": {
+    "assigner": {
+      "display": "HL7 Europe"
+    },
+    "system": "urn:oid:2.16.840.1.113883.2.51.999",
+    "value": "f97ba6d2-bccb-4076-a43b-0390fcf1a7c7"
+  },
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:c74da0e9-4791-4cbf-bc71-230b016bafb7",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "c74da0e9-4791-4cbf-bc71-230b016bafb7",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "TRAIN"
+            }
+          ],
+          "tag": [
+            {
+              "system": "https://synderai.net/fhir/CodeSystem/tags",
+              "code": "synthetic",
+              "display": "SYNDERAI Synthetic data"
+            }
+          ],
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/composition-eu-eps"
+          ]
+        },
+        "identifier": {
+          "assigner": {
+            "display": "HL7 Europe"
+          },
+          "system": "urn:oid:2.16.840.1.113883.2.51.999",
+          "value": "f3c14eba-3aad-4197-8974-0b77d761fd49"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "60591-5",
+              "system": "http://loinc.org",
+              "display": "Patient summary Document"
+            }
+          ],
+          "text": "Patient summary Document"
+        },
+        "author": [
+          {
+            "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7"
+          }
+        ],
+        "section": [
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Condition</th><th>Onset Date</th><th>Status</th></tr><tr><td>Chronic kidney disease stage 3</td><td><span class=\"nb\">11-Jul-2019</span></td><td>active</td></tr><tr><td>Proteinuria due to type 2 diabetes mellitus</td><td><span class=\"nb\">11-Jul-2019</span></td><td>active</td></tr><tr><td>Alzheimer's disease</td><td><span class=\"nb\">28-Sep-2017</span></td><td>active</td></tr><tr><td>Chronic kidney disease stage 2</td><td><span class=\"nb\">05-Jan-2017</span></td><td>active</td></tr><tr><td>Microalbuminuria due to type 2 diabetes mellitus</td><td><span class=\"nb\">05-Jan-2017</span></td><td>active</td></tr><tr><td>Disorder of kidney due to diabetes mellitus</td><td><span class=\"nb\">26-Jul-2012</span></td><td>active</td></tr><tr><td>Chronic kidney disease stage 1</td><td><span class=\"nb\">26-Jul-2012</span></td><td>active</td></tr><tr><td>Osteoporosis</td><td><span class=\"nb\">24-May-2001</span></td><td>active</td></tr><tr><td>Ischemic heart disease</td><td><span class=\"nb\">25-Apr-1996</span></td><td>active</td></tr><tr><td>Chronic sinusitis</td><td><span class=\"nb\">11-May-1987</span></td><td>active</td></tr><tr><td>Essential hypertension</td><td><span class=\"nb\">11-Sep-1958</span></td><td>active</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:c6dbc985-6c81-4514-a75f-065a745d4097"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4",
+                  "display": "Problem list - Reported"
+                }
+              ]
+            },
+            "title": "Problem list"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>No known medications</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:94d31734-2b06-4884-ba9f-a0fa2b456d9b"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10160-0",
+                  "display": "History of Medication use Narrative"
+                }
+              ]
+            },
+            "title": "Medication list"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vaccine</th><th>Date</th></tr><tr><td>Influenza virus antigen only vaccine product</td><td><span class=\"nb\">23-Jan-2025</span></td></tr><tr><td>Clostridium tetani toxoid antigen adsorbed only vaccine product</td><td><span class=\"nb\">12-Aug-2021</span></td></tr><tr><td>SARS-CoV-2 mRNA vaccine</td><td><span class=\"nb\">11-Mar-2021</span></td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:567c41bc-0f57-4eab-a1ff-f06ef6cbcaba"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11369-6",
+                  "display": "History of Immunization note"
+                }
+              ]
+            },
+            "title": "Immunizations list"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Procedure</th><th>Date</th><th>Reason</th></tr><tr><td>Notifications</td><td><span class=\"nb\">24-Jul-2025</span></td><td>-</td></tr><tr><td>Certification procedure</td><td><span class=\"nb\">24-Jul-2025</span></td><td>-</td></tr><tr><td>Initial patient assessment</td><td><span class=\"nb\">24-Jul-2025</span></td><td>-</td></tr><tr><td>Development of individualized plan of care</td><td><span class=\"nb\">24-Jul-2025</span></td><td>-</td></tr><tr><td>Hospice care</td><td><span class=\"nb\">24-Jul-2025</span></td><td>-</td></tr><tr><td>Depression screening</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr><tr><td>Assessment of health and social care needs</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr><tr><td>Assessment of anxiety</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr><tr><td>Assessment using Morse Fall Scale</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr><tr><td>Assessment using AUDIT-C (Alcohol Use Disorders Identification Test - Consumption)</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr><tr><td>Assessment of substance use</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr><tr><td>Depression screening using Patient Health Questionnaire Two-Item score (procedure)</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr><tr><td>Medication reconciliation</td><td><span class=\"nb\">19-Jun-2025</span></td><td>-</td></tr><tr><td>Screening for drug abuse</td><td><span class=\"nb\">19-Jun-2025</span></td><td>-</td></tr><tr><td>Screening for domestic abuse</td><td><span class=\"nb\">19-Jun-2025</span></td><td>-</td></tr><tr><td>Depression screening using PHQ-9 (Patient Health Questionnaire 9) score</td><td><span class=\"nb\">23-Jan-2025</span></td><td>-</td></tr><tr><td>Patient discharge</td><td><span class=\"nb\">10-Aug-2015</span></td><td>-</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:2dc0cc6d-83dc-4162-b397-4d0fdf872637"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "47519-4",
+                  "display": "History of Procedures Document"
+                }
+              ]
+            },
+            "title": "Procedure History list"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Allergy/Intolerance</th><th>Onset Date</th><th>Status</th><th>Type</th><th>Reaction</th></tr><tr><td></td><td>?</td><td>active</td><td>?</td><td></td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:344f52cc-33df-4bf1-a282-00d8dd2769bc"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48765-2",
+                  "display": "Allergies and adverse reactions Document"
+                }
+              ]
+            },
+            "title": "Allergies and Intolerances"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Active Planned Care / Goals</th><th>Start Date</th><th>Reason</th></tr><tr><td>Dementia management</td><td><span class=\"nb\">28-Sep-2017</span></td><td>Alzheimer's disease (disorder)</td></tr><tr><td><ul><li>Patient will maintain orientation to person and place as much as possible.</li><li>Patient will retain ability to perform basic activities of daily living with minimal assistance.</li><li>Reduce frequency and severity of behavioral and psychological symptoms of dementia.</li><li>Patient or caregiver will administer dementia medications as prescribed at least 90% of the time.</li><li>Caregiver will report adequate support and resources to manage patient’s dementia care needs.</li></ul></td><td></td><td></td></tr><tr><td>Lifestyle education regarding hypertension</td><td><span class=\"nb\">11-Sep-1958</span></td><td>Essential hypertension (disorder)</td></tr><tr><td><ul><li>Patient will receive education on lifestyle modifications to help manage blood pressure, including dietary changes, physical activity, and medication adherence.</li><li>Achieve and maintain systolic blood pressure within recommended range.</li><li>Achieve and maintain diastolic blood pressure within recommended range.</li></ul></td><td></td><td></td></tr><tr><th>Immunization Recommendation</th><th>Due Date</th><th>Reason</th></tr><tr><td>Vaccine product containing only Influenza virus antigen (medicinal product)</td><td><span class=\"nb\">01-Oct-2025</span></td><td>Annual seasonal influenza vaccination</td></tr></table></div>"
+            },
+            "title": "Care Plan",
+            "code": {
+              "coding": [
+                {
+                  "code": "18776-5",
+                  "system": "http://loinc.org",
+                  "display": "Plan of care note"
+                }
+              ]
+            }
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Signs</th><th>2025-07-17</th><th>2025-06-19</th></tr><tr><td>Body Height</td><td>162.7 cm</td><td>162.7 cm</td></tr><tr><td>Pain severity - 0-10 verbal numeric rating [Score] - Reported</td><td>2 {score}</td><td>1 {score}</td></tr><tr><td>Body Weight</td><td>73.3 kg</td><td>73.3 kg</td></tr><tr><td>Body mass index (BMI) [Ratio]</td><td>27.7 kg/m2</td><td>27.7 kg/m2</td></tr><tr><td>Diastolic Blood Pressure</td><td>50 mm[Hg]</td><td>51 mm[Hg]</td></tr><tr><td>Systolic Blood Pressure</td><td>92 mm[Hg]</td><td>99 mm[Hg]</td></tr><tr><td>Heart rate</td><td>91 /min</td><td>92 /min</td></tr><tr><td>Respiratory rate</td><td>16 /min</td><td>13 /min</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:de8ced9a-f20a-4d59-99d6-1b434c8ec2ad"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8716-3",
+                  "display": "Vital signs note"
+                }
+              ]
+            },
+            "title": "Vital Signs"
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><table class=\"hl7__ips\"><thead><tr><th>Recent Lab Observations</th><th>17-JUL-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr></thead><tbody><tr><td>Glucose [Mass/volume] in Serum or Plasma</td><td>79.3</td><td>70 - 140</td><td>mg/dL</td></tr><tr><td>Urea nitrogen [Mass/volume] in Serum or Plasma</td><td>12.8</td><td>7 - 20</td><td>mg/dL</td></tr><tr><td>Creatinine [Mass/volume] in Serum or Plasma</td><td><strong>1.9 H</strong></td><td>0.6 - 1.1</td><td>mg/dL</td></tr><tr><td>Calcium [Mass/volume] in Serum or Plasma</td><td>9.8</td><td>8.5 - 10.4</td><td>mg/dL</td></tr><tr><td>Sodium [Moles/volume] in Serum or Plasma</td><td>136.0</td><td>135 - 145</td><td>mmol/L</td></tr><tr><td>Potassium [Moles/volume] in Serum or Plasma</td><td>5.0</td><td>3.5 - 5.1</td><td>mmol/L</td></tr><tr><td>Chloride [Moles/volume] in Serum or Plasma</td><td><strong>109.3 H</strong></td><td>98 - 108</td><td>mmol/L</td></tr><tr><td>Carbon dioxide, total [Moles/volume] in Serum or Plasma</td><td><strong>21.5 L</strong></td><td>22 - 32</td><td>mmol/L</td></tr><tr><td>Appearance of Urine</td><td>Cloudy urine</td><td></td><td></td></tr><tr><td>Odor of Urine</td><td>Urine smell ammoniacal</td><td></td><td></td></tr><tr><td>Clarity of Urine</td><td>Translucent</td><td></td><td></td></tr><tr><td>Color of Urine</td><td>Brown color</td><td></td><td></td></tr><tr><td>Glucose [Mass/volume] in Urine by Test strip</td><td><strong>1.8 H</strong></td><td>0 - 0.8</td><td>mg/dL</td></tr><tr><td>Glucose [Presence] in Urine by Test strip</td><td>++</td><td></td><td></td></tr><tr><td>Bilirubin.total [Mass/volume] in Urine by Test strip</td><td><strong>1.3 H</strong></td><td>0 - 1</td><td>mg/dL</td></tr><tr><td>Bilirubin.total [Presence] in Urine by Test strip</td><td>Finding of bilirubin in urine</td><td></td><td></td></tr><tr><td>Ketones [Mass/volume] in Urine by Test strip</td><td><strong>16.9 H</strong></td><td>0 - 0.5</td><td>mg/dL</td></tr><tr><td>Ketones [Presence] in Urine by Test strip</td><td>Urine ketone test = ++</td><td></td><td></td></tr><tr><td>Specific gravity of Urine by Test strip</td><td><strong>1.0 L</strong></td><td>1.01 - 1.03</td><td>{nominal}</td></tr><tr><td>pH of Urine by Test strip</td><td>5.1</td><td>4.5 - 7.5</td><td>pH</td></tr><tr><td>Protein [Mass/volume] in Urine by Test strip</td><td><strong>278.1 H</strong></td><td>30 - 15</td><td>mg/dL</td></tr><tr><td>Protein [Presence] in Urine by Test strip</td><td>Urine protein test = ++</td><td></td><td></td></tr><tr><td>Nitrite [Presence] in Urine by Test strip</td><td>Urine nitrite negative</td><td></td><td></td></tr><tr><td>Hemoglobin [Presence] in Urine by Test strip</td><td>Urine blood test = negative</td><td></td><td></td></tr><tr><td>Leukocyte esterase [Presence] in Urine by Test strip</td><td>Urine leukocyte test negative</td><td></td><td></td></tr></tbody></table></table></div>"
+            },
+            "title": "Relevant diagnostic tests/laboratory data",
+            "code": {
+              "coding": [
+                {
+                  "code": "30954-2",
+                  "system": "http://loinc.org",
+                  "display": "Relevant diagnostic tests/laboratory data note"
+                }
+              ]
+            }
+          },
+          {
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Device</th><th>Date (since)</th></tr><tr><td>Hospital bed</td><td><span class=\"nb\">24-Jul-2025</span></td></tr><tr><td>Home nebulizer (physical object)</td><td><span class=\"nb\">11-May-1987</span></td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:3efd4378-5b4f-40e9-b18a-ac0d8f3bab1c"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "46264-8",
+                  "display": "History of medical device use"
+                }
+              ]
+            },
+            "title": "Device Use"
+          }
+        ],
+        "title": "European Patient Summary",
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "custodian": {
+          "reference": "urn:uuid:a9ca8e78-e1a7-46be-8e68-7ed92ce504f9"
+        },
+        "date": "2025-07-17",
+        "confidentiality": "N"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "50a7d0f4-832f-4290-93ac-3ff760eb528c",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "TRAIN"
+            }
+          ],
+          "tag": [
+            {
+              "system": "https://synderai.net/fhir/CodeSystem/tags",
+              "code": "synthetic",
+              "display": "SYNDERAI Synthetic data"
+            }
+          ],
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/patient-eu-eps"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "PT",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://ec.europa.eu/identifier/eci",
+            "value": "4402-486299-5"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "MR",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://local.setting.eu/identifier",
+            "value": "1b508fad-b6dd-d717-957a-9c65e3d51075"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Aurėja"
+            ],
+            "family": "Grinius",
+            "text": "Aurėja Grinius"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "645 Nagys Trace Apt. 267"
+            ],
+            "use": "home",
+            "type": "physical",
+            "postalCode": "97101",
+            "city": "Port Aušrinėfort",
+            "country": "Lithuania"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+370 74638787"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LT",
+                  "system": "http://hl7.org/fhir/ValueSet/country"
+                }
+              ]
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Aurėja Grinius</td><td>female</td><td>01-Aug-1943</td></tr></table></div>"
+        },
+        "gender": "female",
+        "birthDate": "1943-08-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "d3893f78-0235-46e2-a89b-39a73e4d78c7",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\">Provider Role Id d3893f78-0235-46e2-a89b-39a73e4d78c7</table></div>"
+        },
+        "practitioner": {
+          "reference": "urn:uuid:99ef3f33-bdb1-495f-88f0-d3df6ecb4391"
+        },
+        "organization": {
+          "reference": "urn:uuid:a9ca8e78-e1a7-46be-8e68-7ed92ce504f9"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a9ca8e78-e1a7-46be-8e68-7ed92ce504f9",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "a9ca8e78-e1a7-46be-8e68-7ed92ce504f9",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/base/StructureDefinition/organization-eu"
+          ]
+        },
+        "identifier": [
+          {
+            "assigner": {
+              "display": "HL7 Europe"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.51.999",
+            "value": "cc60ea66-03eb-4cd1-ad13-ebc2a8e364d4"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "182 Savanorių pr."
+            ],
+            "city": "Klaipėda",
+            "postalCode": "LT-91200",
+            "country": "Lithuania"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\">Dr. Tomas Bakas</table></div>"
+        },
+        "name": "Dr. Tomas Bakas"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:99ef3f33-bdb1-495f-88f0-d3df6ecb4391",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "99ef3f33-bdb1-495f-88f0-d3df6ecb4391",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu"
+          ]
+        },
+        "name": [
+          {
+            "prefix": [
+              "Dr."
+            ],
+            "given": [
+              "Hel"
+            ],
+            "family": "Ping"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\">Dr. Hel Ping</table></div>"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c6dbc985-6c81-4514-a75f-065a745d4097",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "c6dbc985-6c81-4514-a75f-065a745d4097",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "433144002",
+              "system": "http://snomed.info/sct",
+              "display": "Chronic kidney disease stage 3 (disorder)"
+            }
+          ],
+          "text": "Chronic kidney disease stage 3"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Chronic kidney disease stage 3</td><td><span class=\"nb\">11-Jul-2019</span></td><td>active</td></tr></table></div>"
+        },
+        "onsetDateTime": "2019-07-11",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8af0e9ab-e645-40cf-acfa-917e3c518bd7",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "8af0e9ab-e645-40cf-acfa-917e3c518bd7",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "157141000119108",
+              "system": "http://snomed.info/sct",
+              "display": "Proteinuria due to type 2 diabetes mellitus (disorder)"
+            }
+          ],
+          "text": "Proteinuria due to type 2 diabetes mellitus"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Proteinuria due to type 2 diabetes mellitus</td><td><span class=\"nb\">11-Jul-2019</span></td><td>active</td></tr></table></div>"
+        },
+        "onsetDateTime": "2019-07-11",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6e319c29-56a0-47c4-8fcf-3b268f9fc542",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "6e319c29-56a0-47c4-8fcf-3b268f9fc542",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "26929004",
+              "system": "http://snomed.info/sct",
+              "display": "Alzheimer&#039;s disease (disorder)"
+            }
+          ],
+          "text": "Alzheimer&#039;s disease"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Alzheimer's disease</td><td><span class=\"nb\">28-Sep-2017</span></td><td>active</td></tr></table></div>"
+        },
+        "onsetDateTime": "2017-09-28",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a2eb238f-48ca-47e4-9109-4fe8c7e5cc24",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "a2eb238f-48ca-47e4-9109-4fe8c7e5cc24",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "431856006",
+              "system": "http://snomed.info/sct",
+              "display": "Chronic kidney disease stage 2 (disorder)"
+            }
+          ],
+          "text": "Chronic kidney disease stage 2"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Chronic kidney disease stage 2</td><td><span class=\"nb\">05-Jan-2017</span></td><td>active</td></tr></table></div>"
+        },
+        "onsetDateTime": "2017-01-05",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4b9e50e9-b235-4552-96d5-d3b019461747",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4b9e50e9-b235-4552-96d5-d3b019461747",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "90781000119102",
+              "system": "http://snomed.info/sct",
+              "display": "Microalbuminuria due to type 2 diabetes mellitus (disorder)"
+            }
+          ],
+          "text": "Microalbuminuria due to type 2 diabetes mellitus"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Microalbuminuria due to type 2 diabetes mellitus</td><td><span class=\"nb\">05-Jan-2017</span></td><td>active</td></tr></table></div>"
+        },
+        "onsetDateTime": "2017-01-05",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:92853913-d5d3-4f9a-bfb9-90c436a527db",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "92853913-d5d3-4f9a-bfb9-90c436a527db",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "127013003",
+              "system": "http://snomed.info/sct",
+              "display": "Disorder of kidney due to diabetes mellitus (disorder)"
+            }
+          ],
+          "text": "Disorder of kidney due to diabetes mellitus"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Disorder of kidney due to diabetes mellitus</td><td><span class=\"nb\">26-Jul-2012</span></td><td>active</td></tr></table></div>"
+        },
+        "onsetDateTime": "2012-07-26",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8926a294-fd67-4945-b359-3f797828924e",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "8926a294-fd67-4945-b359-3f797828924e",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "431855005",
+              "system": "http://snomed.info/sct",
+              "display": "Chronic kidney disease stage 1 (disorder)"
+            }
+          ],
+          "text": "Chronic kidney disease stage 1"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Chronic kidney disease stage 1</td><td><span class=\"nb\">26-Jul-2012</span></td><td>active</td></tr></table></div>"
+        },
+        "onsetDateTime": "2012-07-26",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cd03ff90-c962-455c-bafe-f3ef59914584",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cd03ff90-c962-455c-bafe-f3ef59914584",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "64859006",
+              "system": "http://snomed.info/sct",
+              "display": "Osteoporosis (disorder)"
+            }
+          ],
+          "text": "Osteoporosis"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Osteoporosis</td><td><span class=\"nb\">24-May-2001</span></td><td>active</td></tr></table></div>"
+        },
+        "onsetDateTime": "2001-05-24",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:986b3c8a-4f0c-4e36-a5d1-98ffdebac30e",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "986b3c8a-4f0c-4e36-a5d1-98ffdebac30e",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "414545008",
+              "system": "http://snomed.info/sct",
+              "display": "Ischemic heart disease (disorder)"
+            }
+          ],
+          "text": "Ischemic heart disease"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Ischemic heart disease</td><td><span class=\"nb\">25-Apr-1996</span></td><td>active</td></tr></table></div>"
+        },
+        "onsetDateTime": "1996-04-25",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2f0a3fd5-d8b7-469d-b1c8-238c7e95678c",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "2f0a3fd5-d8b7-469d-b1c8-238c7e95678c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "40055000",
+              "system": "http://snomed.info/sct",
+              "display": "Chronic sinusitis (disorder)"
+            }
+          ],
+          "text": "Chronic sinusitis"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Chronic sinusitis</td><td><span class=\"nb\">11-May-1987</span></td><td>active</td></tr></table></div>"
+        },
+        "onsetDateTime": "1987-05-11",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5ed92598-681b-48b6-b191-9a38f79c3dec",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "5ed92598-681b-48b6-b191-9a38f79c3dec",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "59621000",
+              "system": "http://snomed.info/sct",
+              "display": "Essential hypertension (disorder)"
+            }
+          ],
+          "text": "Essential hypertension"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Essential hypertension</td><td><span class=\"nb\">11-Sep-1958</span></td><td>active</td></tr></table></div>"
+        },
+        "onsetDateTime": "1958-09-11",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:848d1da7-84b6-48ff-9047-937f52633df2",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "848d1da7-84b6-48ff-9047-937f52633df2",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "444814009",
+              "system": "http://snomed.info/sct",
+              "display": "Viral sinusitis (disorder)"
+            }
+          ],
+          "text": "Viral sinusitis"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td><span class=\"grayedout\">Viral sinusitis</span></td><td><span class=\"nb\">15-May-2025 - 26-May-2025</span></td><td><span class=\"grayedout\">inactive</span></td></tr></table></div>"
+        },
+        "onsetDateTime": "2025-05-15",
+        "abatementDateTime": "2025-05-26",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1ec46d93-b96b-4377-8c55-f0e7f61b012d",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1ec46d93-b96b-4377-8c55-f0e7f61b012d",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "62564004",
+              "system": "http://snomed.info/sct",
+              "display": "Concussion with loss of consciousness (disorder)"
+            }
+          ],
+          "text": "Concussion with loss of consciousness"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td><span class=\"grayedout\">Concussion with loss of consciousness</span></td><td><span class=\"nb\">08-Dec-2022 - 08-Jan-2023</span></td><td><span class=\"grayedout\">inactive</span></td></tr></table></div>"
+        },
+        "onsetDateTime": "2022-12-08",
+        "abatementDateTime": "2023-01-08",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b4b2c2aa-2591-4f71-b10d-c75544c70df9",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "b4b2c2aa-2591-4f71-b10d-c75544c70df9",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "110030002",
+              "system": "http://snomed.info/sct",
+              "display": "Concussion injury of brain (disorder)"
+            }
+          ],
+          "text": "Concussion injury of brain"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td><span class=\"grayedout\">Concussion injury of brain</span></td><td><span class=\"nb\">08-Dec-2022 - 08-Jan-2023</span></td><td><span class=\"grayedout\">inactive</span></td></tr></table></div>"
+        },
+        "onsetDateTime": "2022-12-08",
+        "abatementDateTime": "2023-01-08",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:951f15ff-847b-41df-beba-cf6d0b0311b5",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "951f15ff-847b-41df-beba-cf6d0b0311b5",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "195662009",
+              "system": "http://snomed.info/sct",
+              "display": "Acute viral pharyngitis (disorder)"
+            }
+          ],
+          "text": "Acute viral pharyngitis"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td><span class=\"grayedout\">Acute viral pharyngitis</span></td><td><span class=\"nb\">15-Aug-2019 - 27-Aug-2019</span></td><td><span class=\"grayedout\">inactive</span></td></tr></table></div>"
+        },
+        "onsetDateTime": "2019-08-15",
+        "abatementDateTime": "2019-08-27",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7e3090bd-afa7-4fe6-a2f9-278005a794b1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "7e3090bd-afa7-4fe6-a2f9-278005a794b1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "444814009",
+              "system": "http://snomed.info/sct",
+              "display": "Viral sinusitis (disorder)"
+            }
+          ],
+          "text": "Viral sinusitis"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td><span class=\"grayedout\">Viral sinusitis</span></td><td><span class=\"nb\">15-Aug-2019 - 11-Sep-2019</span></td><td><span class=\"grayedout\">inactive</span></td></tr></table></div>"
+        },
+        "onsetDateTime": "2019-08-15",
+        "abatementDateTime": "2019-09-11",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "asserter": {
+          "reference": "urn:uuid:d3893f78-0235-46e2-a89b-39a73e4d78c7",
+          "display": "Dr. Tomas Bakas"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:94d31734-2b06-4884-ba9f-a0fa2b456d9b",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "94d31734-2b06-4884-ba9f-a0fa2b456d9b",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/MedicationStatement-eu-eps"
+          ]
+        },
+        "effectivePeriod": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "787481004",
+              "system": "http://snomed.info/sct",
+              "display": "No known medications (situation)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:567c41bc-0f57-4eab-a1ff-f06ef6cbcaba",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "567c41bc-0f57-4eab-a1ff-f06ef6cbcaba",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "1181000221105",
+              "system": "http://snomed.info/sct",
+              "display": "Vaccine product containing Influenza virus antigen"
+            },
+            {
+              "code": "J07BB02",
+              "system": "http://www.whocc.no/atc",
+              "display": "Influenza, inactivated, split virus"
+            }
+          ],
+          "text": "Influenza virus antigen only vaccine product"
+        },
+        "site": {
+          "coding": [
+            {
+              "code": "244979005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire muscle of upper arm"
+            }
+          ],
+          "text": "Entire muscle of upper arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "code": "78421000",
+              "system": "http://snomed.info/sct",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular route"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Influenza virus antigen only vaccine product</td><td><span class=\"nb\">23-Jan-2025</span></td></tr></table></div>"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "occurrenceDateTime": "2025-01-23",
+        "lotNumber": "ND-zrXbfGK",
+        "expirationDate": "2026-01-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:37971f93-26a0-4bcf-8b43-031d5156a56c",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "37971f93-26a0-4bcf-8b43-031d5156a56c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "777725002",
+              "system": "http://snomed.info/sct",
+              "display": "Vaccine product containing only Clostridium tetani toxoid antigen adsorbed"
+            },
+            {
+              "code": "J07AM51",
+              "system": "http://www.whocc.no/atc",
+              "display": "Diphtheria-tetanus vaccines, adult type"
+            }
+          ],
+          "text": "Clostridium tetani toxoid antigen adsorbed only vaccine product"
+        },
+        "site": {
+          "coding": [
+            {
+              "code": "244979005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire muscle of upper arm"
+            }
+          ],
+          "text": "Entire muscle of upper arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "code": "78421000",
+              "system": "http://snomed.info/sct",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular route"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Clostridium tetani toxoid antigen adsorbed only vaccine product</td><td><span class=\"nb\">12-Aug-2021</span></td></tr></table></div>"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "occurrenceDateTime": "2021-08-12",
+        "lotNumber": "LZ-Wr4fkHQx",
+        "expirationDate": "2022-04-26"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a47cddb7-d72e-451f-acc8-f7565f02520d",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "a47cddb7-d72e-451f-acc8-f7565f02520d",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "1119349007",
+              "system": "http://snomed.info/sct",
+              "display": "Vaccine product containing SARS-CoV-2 mRNA"
+            },
+            {
+              "code": "J07BX03",
+              "system": "http://www.whocc.no/atc",
+              "display": "COVID-19 mRNA vaccines"
+            }
+          ],
+          "text": "SARS-CoV-2 mRNA vaccine"
+        },
+        "site": {
+          "coding": [
+            {
+              "code": "244979005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire muscle of upper arm"
+            }
+          ],
+          "text": "Entire muscle of upper arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "code": "78421000",
+              "system": "http://snomed.info/sct",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular route"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>SARS-CoV-2 mRNA vaccine</td><td><span class=\"nb\">11-Mar-2021</span></td></tr></table></div>"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "occurrenceDateTime": "2021-03-11",
+        "lotNumber": "JM-NJR2WiUcr",
+        "expirationDate": "2021-07-25"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2dc0cc6d-83dc-4162-b397-4d0fdf872637",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "2dc0cc6d-83dc-4162-b397-4d0fdf872637",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "185087000",
+              "system": "http://snomed.info/sct",
+              "display": "Notifications (procedure)"
+            }
+          ],
+          "text": "Notifications"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Notifications</td><td><span class=\"nb\">24-Jul-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-07-24",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ff906741-1d5b-4707-818c-9492b88013f4",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "ff906741-1d5b-4707-818c-9492b88013f4",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "310417005",
+              "system": "http://snomed.info/sct",
+              "display": "Certification procedure (procedure)"
+            }
+          ],
+          "text": "Certification procedure"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Certification procedure</td><td><span class=\"nb\">24-Jul-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-07-24",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7b784a60-49c1-4b8f-8466-c263d7fd5119",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "7b784a60-49c1-4b8f-8466-c263d7fd5119",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "315639002",
+              "system": "http://snomed.info/sct",
+              "display": "Initial patient assessment (procedure)"
+            }
+          ],
+          "text": "Initial patient assessment"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Initial patient assessment</td><td><span class=\"nb\">24-Jul-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-07-24",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:596c99f9-83db-48e7-97fa-241bb556281a",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "596c99f9-83db-48e7-97fa-241bb556281a",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "370789001",
+              "system": "http://snomed.info/sct",
+              "display": "Development of individualized plan of care (procedure)"
+            }
+          ],
+          "text": "Development of individualized plan of care"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Development of individualized plan of care</td><td><span class=\"nb\">24-Jul-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-07-24",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b9f6110e-d480-432a-8aac-246e14ea3e6c",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "b9f6110e-d480-432a-8aac-246e14ea3e6c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "385763009",
+              "system": "http://snomed.info/sct",
+              "display": "Hospice care (regime/therapy)"
+            }
+          ],
+          "text": "Hospice care"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Hospice care</td><td><span class=\"nb\">24-Jul-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-07-24",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:441095f7-da93-4a7c-9c15-540a8a5b6341",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "441095f7-da93-4a7c-9c15-540a8a5b6341",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "171207006",
+              "system": "http://snomed.info/sct",
+              "display": "Depression screening (procedure)"
+            }
+          ],
+          "text": "Depression screening"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Depression screening</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-07-17",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3483d23a-affa-4230-9cf5-33b3be3ce7dd",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "3483d23a-affa-4230-9cf5-33b3be3ce7dd",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "710824005",
+              "system": "http://snomed.info/sct",
+              "display": "Assessment of health and social care needs (procedure)"
+            }
+          ],
+          "text": "Assessment of health and social care needs"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Assessment of health and social care needs</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-07-17",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6e68e868-c8ff-4a8c-8e06-8436573af3f0",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "6e68e868-c8ff-4a8c-8e06-8436573af3f0",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "710841007",
+              "system": "http://snomed.info/sct",
+              "display": "Assessment of anxiety (procedure)"
+            }
+          ],
+          "text": "Assessment of anxiety"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Assessment of anxiety</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-07-17",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7a8982f6-7b9d-4cb5-a488-b662d9a0169c",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "7a8982f6-7b9d-4cb5-a488-b662d9a0169c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "762993000",
+              "system": "http://snomed.info/sct",
+              "display": "Assessment using Morse Fall Scale (procedure)"
+            }
+          ],
+          "text": "Assessment using Morse Fall Scale"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Assessment using Morse Fall Scale</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-07-17",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c70d9395-0dfe-4c7a-94a7-b4363e02b1f4",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "c70d9395-0dfe-4c7a-94a7-b4363e02b1f4",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "763302001",
+              "system": "http://snomed.info/sct",
+              "display": "Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)"
+            }
+          ],
+          "text": "Assessment using AUDIT-C (Alcohol Use Disorders Identification Test - Consumption)"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Assessment using AUDIT-C (Alcohol Use Disorders Identification Test - Consumption)</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-07-17",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:386f907a-2c93-4c25-96dc-cacbaed0d7f1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "386f907a-2c93-4c25-96dc-cacbaed0d7f1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "428211000124100",
+              "system": "http://snomed.info/sct",
+              "display": "Assessment of substance use (procedure)"
+            }
+          ],
+          "text": "Assessment of substance use"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Assessment of substance use</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-07-17",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5a51989d-0f73-44fd-ab44-1c2092e1eeee",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "5a51989d-0f73-44fd-ab44-1c2092e1eeee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "454711000124102",
+              "system": "http://snomed.info/sct",
+              "display": "Depression screening using Patient Health Questionnaire Two-Item score (procedure)"
+            }
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Depression screening using Patient Health Questionnaire Two-Item score (procedure)</td><td><span class=\"nb\">17-Jul-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-07-17",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e2190bd1-f6c3-4d4e-b4ea-373679d9a121",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "e2190bd1-f6c3-4d4e-b4ea-373679d9a121",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "430193006",
+              "system": "http://snomed.info/sct",
+              "display": "Medication Reconciliation (procedure)"
+            }
+          ],
+          "text": "Medication reconciliation"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Medication reconciliation</td><td><span class=\"nb\">19-Jun-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-06-19",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ac0e2335-c319-4276-9fd0-d3e738d69bf5",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "ac0e2335-c319-4276-9fd0-d3e738d69bf5",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "713106006",
+              "system": "http://snomed.info/sct",
+              "display": "Screening for drug abuse (procedure)"
+            }
+          ],
+          "text": "Screening for drug abuse"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Screening for drug abuse</td><td><span class=\"nb\">19-Jun-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-06-19",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6318cc87-55b3-48e7-af75-d466ce10cabb",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "6318cc87-55b3-48e7-af75-d466ce10cabb",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "866148006",
+              "system": "http://snomed.info/sct",
+              "display": "Screening for domestic abuse (procedure)"
+            }
+          ],
+          "text": "Screening for domestic abuse"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Screening for domestic abuse</td><td><span class=\"nb\">19-Jun-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-06-19",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1502bd1f-c9fa-41d7-85d4-28158716109c",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "1502bd1f-c9fa-41d7-85d4-28158716109c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "715252007",
+              "system": "http://snomed.info/sct",
+              "display": "Depression screening using Patient Health Questionnaire Nine Item score (procedure)"
+            }
+          ],
+          "text": "Depression screening using PHQ-9 (Patient Health Questionnaire 9) score"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Depression screening using PHQ-9 (Patient Health Questionnaire 9) score</td><td><span class=\"nb\">23-Jan-2025</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2025-01-23",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4d3cd223-97c7-4c89-802e-3ec38cedcca2",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "4d3cd223-97c7-4c89-802e-3ec38cedcca2",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "58000006",
+              "system": "http://snomed.info/sct",
+              "display": "Patient discharge (procedure)"
+            }
+          ],
+          "text": "Patient discharge"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Patient discharge</td><td><span class=\"nb\">10-Aug-2015</span></td><td>-</td></tr></table></div>"
+        },
+        "status": "completed",
+        "performedDateTime": "2015-08-10",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:344f52cc-33df-4bf1-a282-00d8dd2769bc",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "344f52cc-33df-4bf1-a282-00d8dd2769bc",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core"
+          ]
+        },
+        "code": {
+          "text": ""
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+            }
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Allergy/Intolerance</th><th>Onset Date</th><th>Status</th><th>Type</th><th>Reaction</th></tr><tr><td></td><td>?</td><td>active</td><td>?</td><td></td></tr></table></div>"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "_onsetDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:41eb7e20-d2d1-466b-9d53-335807ff26e8",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "41eb7e20-d2d1-466b-9d53-335807ff26e8",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "assess-plan",
+                "system": "http://terminology.hl7.org/CodeSystem/care-plan-category",
+                "display": "Assessment and Plan"
+              }
+            ]
+          }
+        ],
+        "activity": [
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "code": "386257007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Dementia management (regime/therapy)"
+                  }
+                ]
+              },
+              "reasonCode": [
+                {
+                  "coding": [
+                    {
+                      "code": "26929004",
+                      "system": "http://snomed.info/sct",
+                      "display": "Alzheimer&#039;s disease (disorder)"
+                    }
+                  ]
+                }
+              ],
+              "status": "unknown",
+              "description": "Dementia management",
+              "kind": "Appointment"
+            }
+          }
+        ],
+        "period": {
+          "start": "2017-09-28"
+        },
+        "goal": [
+          {
+            "reference": "urn:uuid:b69602fb-7d81-4de8-8990-3c6fa98bf866"
+          },
+          {
+            "reference": "urn:uuid:46c03bdb-2bda-4645-80be-ce18d6217d44"
+          },
+          {
+            "reference": "urn:uuid:39889299-5576-469b-8825-f935f462feb9"
+          },
+          {
+            "reference": "urn:uuid:d92fcfa1-ba7a-425b-a696-9a2a1f56be1d"
+          },
+          {
+            "reference": "urn:uuid:d6419407-1a7b-4674-98cc-c645a0e461c9"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips first25\"><tr><th>Active Planned Care / Goals</th><th>Start Date</th><th>Reason</th></tr><tr><td>Dementia management</td><td><span class=\"nb\">28-Sep-2017</span></td><td>Alzheimer's disease (disorder)</td></tr><tr><td><ul><li>Patient will maintain orientation to person and place as much as possible.</li><li>Patient will retain ability to perform basic activities of daily living with minimal assistance.</li><li>Reduce frequency and severity of behavioral and psychological symptoms of dementia.</li><li>Patient or caregiver will administer dementia medications as prescribed at least 90% of the time.</li><li>Caregiver will report adequate support and resources to manage patient’s dementia care needs.</li></ul></td><td></td><td></td></tr></table></div>"
+        },
+        "status": "active",
+        "intent": "plan",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:139e6955-f84e-43a8-b1c4-8bca3fc82d8f",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "139e6955-f84e-43a8-b1c4-8bca3fc82d8f",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "assess-plan",
+                "system": "http://terminology.hl7.org/CodeSystem/care-plan-category",
+                "display": "Assessment and Plan"
+              }
+            ]
+          }
+        ],
+        "activity": [
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "code": "443402002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Lifestyle education regarding hypertension (procedure)"
+                  }
+                ]
+              },
+              "reasonCode": [
+                {
+                  "coding": [
+                    {
+                      "code": "59621000",
+                      "system": "http://snomed.info/sct",
+                      "display": "Essential hypertension (disorder)"
+                    }
+                  ]
+                }
+              ],
+              "status": "unknown",
+              "description": "Lifestyle education regarding hypertension",
+              "kind": "Appointment"
+            }
+          }
+        ],
+        "period": {
+          "start": "1958-09-11"
+        },
+        "goal": [
+          {
+            "reference": "urn:uuid:024169f7-411c-41c4-ae20-1ff25f6f1051"
+          },
+          {
+            "reference": "urn:uuid:6abfde76-fdc0-4449-a6c2-17ffa4affdee"
+          },
+          {
+            "reference": "urn:uuid:2ef0c8bd-6d9c-49b4-8f45-43a8f1214c83"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips first25\"><tr><th>Active Planned Care / Goals</th><th>Start Date</th><th>Reason</th></tr><tr><td>Lifestyle education regarding hypertension</td><td><span class=\"nb\">11-Sep-1958</span></td><td>Essential hypertension (disorder)</td></tr><tr><td><ul><li>Patient will receive education on lifestyle modifications to help manage blood pressure, including dietary changes, physical activity, and medication adherence.</li><li>Achieve and maintain systolic blood pressure within recommended range.</li><li>Achieve and maintain diastolic blood pressure within recommended range.</li></ul></td><td></td><td></td></tr></table></div>"
+        },
+        "status": "active",
+        "intent": "plan",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:82623b57-74eb-4868-8346-52a7a8691c24",
+      "resource": {
+        "resourceType": "ImmunizationRecommendation",
+        "id": "82623b57-74eb-4868-8346-52a7a8691c24",
+        "recommendation": [
+          {
+            "vaccineCode": [
+              {
+                "coding": [
+                  {
+                    "code": "1181000221105",
+                    "system": "http://snomed.info/sct",
+                    "display": "Vaccine product containing only Influenza virus antigen (medicinal product)"
+                  }
+                ]
+              }
+            ],
+            "dateCriterion": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "code": "30980-7",
+                      "system": "http://loinc.org",
+                      "display": "Date vaccine due"
+                    }
+                  ]
+                },
+                "value": "2025-10-01"
+              }
+            ],
+            "targetDisease": {
+              "coding": [
+                {
+                  "code": "6142004",
+                  "system": "http://snomed.info/sct",
+                  "display": "Influenza (disorder)"
+                }
+              ]
+            },
+            "series": "Annual seasonal influenza vaccination",
+            "forecastStatus": {
+              "coding": [
+                {
+                  "code": "due",
+                  "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status",
+                  "display": "Due"
+                }
+              ]
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Vaccine product containing only Influenza virus antigen (medicinal product)</td><td><span class=\"nb\">01-Oct-2025</span></td><td>Annual seasonal influenza vaccination</td></tr></table></div>"
+        },
+        "date": "2025-12-11",
+        "patient": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:de8ced9a-f20a-4d59-99d6-1b434c8ec2ad",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "de8ced9a-f20a-4d59-99d6-1b434c8ec2ad",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 162.7,
+          "code": "cm",
+          "unit": "cm"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body Height</td><td>17-Jul-2025</td><td>162.7 cm</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8302-2",
+              "system": "http://loinc.org",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:64851b2e-9f63-4871-bc3f-3dce2eead8ed",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "64851b2e-9f63-4871-bc3f-3dce2eead8ed",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 2,
+          "code": "{score}",
+          "unit": "{score}"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Pain severity - 0-10 verbal numeric rating [Score] - Reported</td><td>17-Jul-2025</td><td>2 {score}</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "72514-3",
+              "system": "http://loinc.org",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:02a15685-6756-4a42-93ba-26c0bcae7541",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "02a15685-6756-4a42-93ba-26c0bcae7541",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 73.3,
+          "code": "kg",
+          "unit": "kg"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body Weight</td><td>17-Jul-2025</td><td>73.3 kg</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "29463-7",
+              "system": "http://loinc.org",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:001fa6b2-c664-4504-b491-7cab15d536d9",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "001fa6b2-c664-4504-b491-7cab15d536d9",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 27.7,
+          "code": "kg/m2",
+          "unit": "kg/m2"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body mass index (BMI) [Ratio]</td><td>17-Jul-2025</td><td>27.7 kg/m2</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "39156-5",
+              "system": "http://loinc.org",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5e8a52ab-cb7d-4476-a50b-7f9cf69ad590",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5e8a52ab-cb7d-4476-a50b-7f9cf69ad590",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 50,
+          "code": "mm[Hg]",
+          "unit": "mm[Hg]"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Diastolic Blood Pressure</td><td>17-Jul-2025</td><td>50 mm[Hg]</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8462-4",
+              "system": "http://loinc.org",
+              "display": "Diastolic Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0de3f144-4de3-4704-83eb-6cdaa44b79fb",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0de3f144-4de3-4704-83eb-6cdaa44b79fb",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 92,
+          "code": "mm[Hg]",
+          "unit": "mm[Hg]"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Systolic Blood Pressure</td><td>17-Jul-2025</td><td>92 mm[Hg]</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8480-6",
+              "system": "http://loinc.org",
+              "display": "Systolic Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:db1a9c84-8e9f-4ff2-b5dc-2a80ca985942",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "db1a9c84-8e9f-4ff2-b5dc-2a80ca985942",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 91,
+          "code": "/min",
+          "unit": "/min"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Heart rate</td><td>17-Jul-2025</td><td>91 /min</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8867-4",
+              "system": "http://loinc.org",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ba699342-6603-44a0-b472-653969da0c8b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ba699342-6603-44a0-b472-653969da0c8b",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 16,
+          "code": "/min",
+          "unit": "/min"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Respiratory rate</td><td>17-Jul-2025</td><td>16 /min</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "9279-1",
+              "system": "http://loinc.org",
+              "display": "Respiratory rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b9bd6556-cdf9-4857-8738-d0c241fd50b9",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b9bd6556-cdf9-4857-8738-d0c241fd50b9",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 162.7,
+          "code": "cm",
+          "unit": "cm"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body Height</td><td>19-Jun-2025</td><td>162.7 cm</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8302-2",
+              "system": "http://loinc.org",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-06-19"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6dcecb87-314c-4586-aced-6764ee878ef3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6dcecb87-314c-4586-aced-6764ee878ef3",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 1,
+          "code": "{score}",
+          "unit": "{score}"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Pain severity - 0-10 verbal numeric rating [Score] - Reported</td><td>19-Jun-2025</td><td>1 {score}</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "72514-3",
+              "system": "http://loinc.org",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-06-19"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:34dd16bc-8470-4210-806c-9d91bd98fb67",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "34dd16bc-8470-4210-806c-9d91bd98fb67",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 73.3,
+          "code": "kg",
+          "unit": "kg"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body Weight</td><td>19-Jun-2025</td><td>73.3 kg</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "29463-7",
+              "system": "http://loinc.org",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-06-19"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:21e8062f-eb13-437a-a584-efa81c1ae100",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "21e8062f-eb13-437a-a584-efa81c1ae100",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 27.7,
+          "code": "kg/m2",
+          "unit": "kg/m2"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Body mass index (BMI) [Ratio]</td><td>19-Jun-2025</td><td>27.7 kg/m2</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "39156-5",
+              "system": "http://loinc.org",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-06-19"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1aa36f23-4ee0-4bd1-bf80-82dcb50b4d34",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1aa36f23-4ee0-4bd1-bf80-82dcb50b4d34",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 51,
+          "code": "mm[Hg]",
+          "unit": "mm[Hg]"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Diastolic Blood Pressure</td><td>19-Jun-2025</td><td>51 mm[Hg]</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8462-4",
+              "system": "http://loinc.org",
+              "display": "Diastolic Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-06-19"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:48b615ed-e35b-492d-a433-1bc9242ae253",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "48b615ed-e35b-492d-a433-1bc9242ae253",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 99,
+          "code": "mm[Hg]",
+          "unit": "mm[Hg]"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Systolic Blood Pressure</td><td>19-Jun-2025</td><td>99 mm[Hg]</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8480-6",
+              "system": "http://loinc.org",
+              "display": "Systolic Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-06-19"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f1c3b725-fb1a-4248-a032-ae1aaa5f936f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f1c3b725-fb1a-4248-a032-ae1aaa5f936f",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 92,
+          "code": "/min",
+          "unit": "/min"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Heart rate</td><td>19-Jun-2025</td><td>92 /min</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8867-4",
+              "system": "http://loinc.org",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-06-19"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6881de6c-537f-4485-bf5b-54a40a5a409e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6881de6c-537f-4485-bf5b-54a40a5a409e",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 13,
+          "code": "/min",
+          "unit": "/min"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><th>Vital Sign</th><th>Date</th><th>Measurement</th></tr><tr><td>Respiratory rate</td><td>19-Jun-2025</td><td>13 /min</td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "9279-1",
+              "system": "http://loinc.org",
+              "display": "Respiratory rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-06-19"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:21d71ae1-9428-40b2-8292-b89f3be765e2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "21d71ae1-9428-40b2-8292-b89f3be765e2",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2345-7",
+              "system": "http://loinc.org",
+              "display": "Glucose [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Glucose [Mass/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 79.3,
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 70,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 140,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Glucose [Mass/volume] in Serum or Plasma</td><td>79.3</td><td>70 - 140</td><td></td><td>mg/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1058c3ec-830d-4bb2-a3a5-1b3ec668327b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1058c3ec-830d-4bb2-a3a5-1b3ec668327b",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "3094-0",
+              "system": "http://loinc.org",
+              "display": "Urea nitrogen [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Urea nitrogen [Mass/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 12.8,
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 7,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 20,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Urea nitrogen [Mass/volume] in Serum or Plasma</td><td>12.8</td><td>7 - 20</td><td></td><td>mg/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:86e1b2eb-82f7-496c-a82c-e43d7ca0a7f5",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "86e1b2eb-82f7-496c-a82c-e43d7ca0a7f5",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2160-0",
+              "system": "http://loinc.org",
+              "display": "Creatinine [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Creatinine [Mass/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 1.9,
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.6,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 1.1,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Creatinine [Mass/volume] in Serum or Plasma</td><td>1.9</td><td>0.6 - 1.1</td><td>H</td><td>mg/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a4e8117-ea3c-40cb-828d-9ecc2e699fea",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a4e8117-ea3c-40cb-828d-9ecc2e699fea",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "17861-6",
+              "system": "http://loinc.org",
+              "display": "Calcium [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Calcium [Mass/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 9.8,
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 8.5,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 10.4,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Calcium [Mass/volume] in Serum or Plasma</td><td>9.8</td><td>8.5 - 10.4</td><td></td><td>mg/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d29254f7-da21-4ce5-addc-283e6122446a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d29254f7-da21-4ce5-addc-283e6122446a",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2951-2",
+              "system": "http://loinc.org",
+              "display": "Sodium [Moles/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Sodium [Moles/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 136,
+          "unit": "mmol/L",
+          "code": "mmol/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 135,
+              "code": "mmol/L",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 145,
+              "code": "mmol/L",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Sodium [Moles/volume] in Serum or Plasma</td><td>136.0</td><td>135 - 145</td><td></td><td>mmol/L</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b654f486-6f96-4131-a598-0aeb02d953a0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b654f486-6f96-4131-a598-0aeb02d953a0",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2823-3",
+              "system": "http://loinc.org",
+              "display": "Potassium [Moles/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Potassium [Moles/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 5,
+          "unit": "mmol/L",
+          "code": "mmol/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 3.5,
+              "code": "mmol/L",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 5.1,
+              "code": "mmol/L",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Potassium [Moles/volume] in Serum or Plasma</td><td>5.0</td><td>3.5 - 5.1</td><td></td><td>mmol/L</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a5f875a5-846e-4f35-af48-308bf77dcc2f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a5f875a5-846e-4f35-af48-308bf77dcc2f",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2075-0",
+              "system": "http://loinc.org",
+              "display": "Chloride [Moles/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Chloride [Moles/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 109.3,
+          "unit": "mmol/L",
+          "code": "mmol/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 98,
+              "code": "mmol/L",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 108,
+              "code": "mmol/L",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Chloride [Moles/volume] in Serum or Plasma</td><td>109.3</td><td>98 - 108</td><td>H</td><td>mmol/L</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d0ec495b-6e92-4698-9e2a-f3a56e7af0d2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d0ec495b-6e92-4698-9e2a-f3a56e7af0d2",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2028-9",
+              "system": "http://loinc.org",
+              "display": "Carbon dioxide, total [Moles/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Carbon dioxide, total [Moles/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 21.5,
+          "unit": "mmol/L",
+          "code": "mmol/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 22,
+              "code": "mmol/L",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 32,
+              "code": "mmol/L",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "L",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Carbon dioxide, total [Moles/volume] in Serum or Plasma</td><td>21.5</td><td>22 - 32</td><td>L</td><td>mmol/L</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a653bf0c-710e-4c9b-9dd3-46570028a4b6",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a653bf0c-710e-4c9b-9dd3-46570028a4b6",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5767-9",
+              "system": "http://loinc.org",
+              "display": "Appearance of Urine"
+            }
+          ],
+          "text": "Appearance of Urine"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Appearance of Urine</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:98a5ae24-3adf-4f39-bd1b-9b8fd575e5ec",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "98a5ae24-3adf-4f39-bd1b-9b8fd575e5ec",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "34533-0",
+              "system": "http://loinc.org",
+              "display": "Odor of Urine"
+            }
+          ],
+          "text": "Odor of Urine"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Odor of Urine</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9971e5d7-f4ff-466a-8a83-f646a33cf697",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9971e5d7-f4ff-466a-8a83-f646a33cf697",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "32167-9",
+              "system": "http://loinc.org",
+              "display": "Clarity of Urine"
+            }
+          ],
+          "text": "Clarity of Urine"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Clarity of Urine</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0663783d-f5d0-409a-bfd5-b696d22e79f2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0663783d-f5d0-409a-bfd5-b696d22e79f2",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5778-6",
+              "system": "http://loinc.org",
+              "display": "Color of Urine"
+            }
+          ],
+          "text": "Color of Urine"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Color of Urine</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:64c04615-dc18-4320-9edf-5e4f15294cb6",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "64c04615-dc18-4320-9edf-5e4f15294cb6",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5792-7",
+              "system": "http://loinc.org",
+              "display": "Glucose [Mass/volume] in Urine by Test strip"
+            }
+          ],
+          "text": "Glucose [Mass/volume] in Urine by Test strip"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 1.8,
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 0.8,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Glucose [Mass/volume] in Urine by Test strip</td><td>1.8</td><td>0 - 0.8</td><td>H</td><td>mg/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:068add0c-3de8-44c6-a1c5-ce6dcb66dcef",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "068add0c-3de8-44c6-a1c5-ce6dcb66dcef",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "25428-4",
+              "system": "http://loinc.org",
+              "display": "Glucose [Presence] in Urine by Test strip"
+            }
+          ],
+          "text": "Glucose [Presence] in Urine by Test strip"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Glucose [Presence] in Urine by Test strip</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ed64e04f-aa70-4818-b13c-f36669b54b9f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ed64e04f-aa70-4818-b13c-f36669b54b9f",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "20505-4",
+              "system": "http://loinc.org",
+              "display": "Bilirubin.total [Mass/volume] in Urine by Test strip"
+            }
+          ],
+          "text": "Bilirubin.total [Mass/volume] in Urine by Test strip"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 1.3,
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 1,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Bilirubin.total [Mass/volume] in Urine by Test strip</td><td>1.3</td><td>0 - 1</td><td>H</td><td>mg/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:25fb0afd-f1b8-4261-a4d1-b2248ea4245f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "25fb0afd-f1b8-4261-a4d1-b2248ea4245f",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5770-3",
+              "system": "http://loinc.org",
+              "display": "Bilirubin.total [Presence] in Urine by Test strip"
+            }
+          ],
+          "text": "Bilirubin.total [Presence] in Urine by Test strip"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Bilirubin.total [Presence] in Urine by Test strip</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:eff761ce-66e5-49d1-b59f-93185686348a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "eff761ce-66e5-49d1-b59f-93185686348a",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5797-6",
+              "system": "http://loinc.org",
+              "display": "Ketones [Mass/volume] in Urine by Test strip"
+            }
+          ],
+          "text": "Ketones [Mass/volume] in Urine by Test strip"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 16.9,
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 0.5,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Ketones [Mass/volume] in Urine by Test strip</td><td>16.9</td><td>0 - 0.5</td><td>H</td><td>mg/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8b4e3dd2-cf1e-455e-a794-53a7102a22a2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8b4e3dd2-cf1e-455e-a794-53a7102a22a2",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2514-8",
+              "system": "http://loinc.org",
+              "display": "Ketones [Presence] in Urine by Test strip"
+            }
+          ],
+          "text": "Ketones [Presence] in Urine by Test strip"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Ketones [Presence] in Urine by Test strip</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5184b53e-2a76-4abb-a82e-30a6b2a2a93c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5184b53e-2a76-4abb-a82e-30a6b2a2a93c",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5811-5",
+              "system": "http://loinc.org",
+              "display": "Specific gravity of Urine by Test strip"
+            }
+          ],
+          "text": "Specific gravity of Urine by Test strip"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 1,
+          "unit": "{nominal}",
+          "code": "{nominal}"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 1.01,
+              "code": "g/mL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 1.03,
+              "code": "g/mL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "L",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Specific gravity of Urine by Test strip</td><td>1.0</td><td>1.01 - 1.03</td><td>L</td><td>{nominal}</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9ff4c5f6-5f2b-43d7-8124-4b207d05011a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9ff4c5f6-5f2b-43d7-8124-4b207d05011a",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5803-2",
+              "system": "http://loinc.org",
+              "display": "pH of Urine by Test strip"
+            }
+          ],
+          "text": "pH of Urine by Test strip"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 5.1,
+          "unit": "pH",
+          "code": "pH"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 4.5,
+              "code": "pH",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 7.5,
+              "code": "pH",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>pH of Urine by Test strip</td><td>5.1</td><td>4.5 - 7.5</td><td></td><td>pH</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4cd2d17b-7536-4dde-bc0b-857d511cb300",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4cd2d17b-7536-4dde-bc0b-857d511cb300",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5804-0",
+              "system": "http://loinc.org",
+              "display": "Protein [Mass/volume] in Urine by Test strip"
+            }
+          ],
+          "text": "Protein [Mass/volume] in Urine by Test strip"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 278.1,
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 30,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "high": {
+              "value": 15,
+              "code": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Protein [Mass/volume] in Urine by Test strip</td><td>278.1</td><td>30 - 15</td><td>H</td><td>mg/dL</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a5c05a7b-c37b-422c-99d3-735a60a78012",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a5c05a7b-c37b-422c-99d3-735a60a78012",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "20454-5",
+              "system": "http://loinc.org",
+              "display": "Protein [Presence] in Urine by Test strip"
+            }
+          ],
+          "text": "Protein [Presence] in Urine by Test strip"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Protein [Presence] in Urine by Test strip</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ea222076-65d5-4190-bc9f-e21d42a41451",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ea222076-65d5-4190-bc9f-e21d42a41451",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5802-4",
+              "system": "http://loinc.org",
+              "display": "Nitrite [Presence] in Urine by Test strip"
+            }
+          ],
+          "text": "Nitrite [Presence] in Urine by Test strip"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Nitrite [Presence] in Urine by Test strip</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7b644807-6d0c-4b99-b707-8bbb0150c95d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7b644807-6d0c-4b99-b707-8bbb0150c95d",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5794-3",
+              "system": "http://loinc.org",
+              "display": "Hemoglobin [Presence] in Urine by Test strip"
+            }
+          ],
+          "text": "Hemoglobin [Presence] in Urine by Test strip"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Hemoglobin [Presence] in Urine by Test strip</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:68578d19-a30d-4c61-ade0-4ef3f1cad62e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "68578d19-a30d-4c61-ade0-4ef3f1cad62e",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "performer": [
+          {
+            "display": "The Central European Lab"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5799-2",
+              "system": "http://loinc.org",
+              "display": "Leukocyte esterase [Presence] in Urine by Test strip"
+            }
+          ],
+          "text": "Leukocyte esterase [Presence] in Urine by Test strip"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__eu__lab__report\"><tr><th>Test</th><th>17-Jul-2025</th><th>Reference&#xA0;Range</th><th>Unit</th></tr><tr><td>Leukocyte esterase [Presence] in Urine by Test strip</td></tr></table></div>"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "effectiveDateTime": "2025-07-17T00:00:48Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3efd4378-5b4f-40e9-b18a-ac0d8f3bab1c",
+      "resource": {
+        "resourceType": "DeviceUseStatement",
+        "id": "3efd4378-5b4f-40e9-b18a-ac0d8f3bab1c",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/deviceUseStatement-eu-eps"
+          ]
+        },
+        "timingPeriod": {
+          "start": "2025-07-24"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Hospital bed</td><td><span class=\"nb\">24-Jul-2025</span></td></tr></table></div>"
+        },
+        "status": "active",
+        "device": {
+          "reference": "urn:uuid:772f2613-e147-4e87-85bb-5c49d82fbfe5",
+          "display": "Hospital bed"
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:772f2613-e147-4e87-85bb-5c49d82fbfe5",
+      "resource": {
+        "resourceType": "Device",
+        "id": "772f2613-e147-4e87-85bb-5c49d82fbfe5",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/device-eu-eps"
+          ]
+        },
+        "udiCarrier": [
+          {
+            "id": "(01)14828561948604(11)250703(17)500718(10)940598(21)378213845913"
+          }
+        ],
+        "status": "active",
+        "patient": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "91537007",
+              "system": "http://snomed.info/sct",
+              "display": "Hospital bed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c41b8f41-79f6-4804-8440-b1eea0a36259",
+      "resource": {
+        "resourceType": "DeviceUseStatement",
+        "id": "c41b8f41-79f6-4804-8440-b1eea0a36259",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/deviceUseStatement-eu-eps"
+          ]
+        },
+        "timingPeriod": {
+          "start": "1987-05-11"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hl7__ips\"><tr><td>Home nebulizer (physical object)</td><td><span class=\"nb\">11-May-1987</span></td></tr></table></div>"
+        },
+        "status": "active",
+        "device": {
+          "reference": "urn:uuid:400ebc39-dc5d-4f7d-b191-018de603e66c",
+          "display": "Home nebulizer (physical object)"
+        },
+        "subject": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:400ebc39-dc5d-4f7d-b191-018de603e66c",
+      "resource": {
+        "resourceType": "Device",
+        "id": "400ebc39-dc5d-4f7d-b191-018de603e66c",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/eps/StructureDefinition/device-eu-eps"
+          ]
+        },
+        "udiCarrier": [
+          {
+            "id": "(01)17784582890469(11)870420(17)120504(10)1707194249120247927(21)38426101982908820"
+          }
+        ],
+        "status": "active",
+        "patient": {
+          "reference": "urn:uuid:50a7d0f4-832f-4290-93ac-3ff760eb528c",
+          "display": "Aurėja Grinius"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "170615005",
+              "system": "http://snomed.info/sct",
+              "display": "Home nebulizer (physical object)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:eeb3f4fd-c221-4a96-a190-ddde2b3a1c45",
+      "resource": {
+        "resourceType": "Device",
+        "id": "eeb3f4fd-c221-4a96-a190-ddde2b3a1c45",
+        "deviceName": [
+          {
+            "name": "SYNDERAI Synthetic Generator",
+            "type": "manufacturer-name"
+          }
+        ],
+        "version": [
+          {
+            "value": "5.0"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">SYNDERAI Synthetic Generator v5.0</div>"
+        },
+        "status": "active",
+        "distinctIdentifier": "synderai-generator-50",
+        "manufacturer": "SYNDERAI Project"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8065da25-f671-44a6-baba-84038bbff50b",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "8065da25-f671-44a6-baba-84038bbff50b",
+        "target": [
+          {
+            "reference": "Patient/50a7d0f4-832f-4290-93ac-3ff760eb528c"
+          },
+          {
+            "reference": "Bundle/36293bef-dc2b-4f7b-83a0-821651410606"
+          },
+          {
+            "reference": "Composition/c74da0e9-4791-4cbf-bc71-230b016bafb7"
+          },
+          {
+            "reference": "PractitionerRole/d3893f78-0235-46e2-a89b-39a73e4d78c7"
+          },
+          {
+            "reference": "Organization/a9ca8e78-e1a7-46be-8e68-7ed92ce504f9"
+          },
+          {
+            "reference": "Practitioner/99ef3f33-bdb1-495f-88f0-d3df6ecb4391"
+          }
+        ],
+        "activity": {
+          "text": "Synthetic Example Data Generation"
+        },
+        "policy": [
+          "https://synderai.net/synderai-synthetic-data-policy"
+        ],
+        "agent": [
+          {
+            "type": {
+              "text": "author"
+            },
+            "who": {
+              "reference": "Device/eeb3f4fd-c221-4a96-a190-ddde2b3a1c45"
+            }
+          }
+        ],
+        "reason": [
+          {
+            "text": "Interoperability Testing and Training (non-clinical use)"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Provenance for SYNDERAI Synthetic Example Data Resource</div>"
+        },
+        "recorded": "2025-07-17T00:00:48Z"
+      }
+    }
+  ],
+  "type": "document",
+  "timestamp": "2025-07-17T00:00:48Z"
+}

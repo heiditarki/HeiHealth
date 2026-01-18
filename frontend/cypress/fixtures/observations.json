@@ -1,0 +1,143 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 8,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-001",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "85354-9",
+              "display": "Blood pressure panel"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 142,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 88,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "effectiveDateTime": "2023-11-15T09:00:00+02:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-002",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "39156-5",
+              "display": "Body mass index (BMI)"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 28.5,
+          "unit": "kg/m2"
+        },
+        "effectiveDateTime": "2023-11-15T09:00:00+02:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-003",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2093-3",
+              "display": "Cholesterol, Total"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 5.8,
+          "unit": "mmol/L"
+        },
+        "effectiveDateTime": "2023-10-20T08:30:00+02:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-007",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 92,
+          "unit": "/min"
+        },
+        "effectiveDateTime": "2023-11-15T09:00:00+02:00"
+      }
+    }
+  ]
+}
