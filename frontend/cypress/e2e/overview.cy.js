@@ -1,38 +1,14 @@
 describe('Overview Page', () => {
   beforeEach(() => {
-    // Set up intercepts BEFORE login (so they catch the API calls triggered by login)
-    cy.intercept('GET', '**/fhir/Patient/eps-001', { fixture: 'patient.json' }).as('getPatient')
+    // Set up intercepts for all FHIR endpoints
+    cy.intercept('GET', '**/fhir/**', { fixture: 'patient.json' }).as('fhirCalls')
     
-    cy.intercept({
-      method: 'GET',
-      url: (url) => url.includes('/fhir/Condition') && url.includes('patient=eps-001')
-    }, { fixture: 'conditions.json' }).as('getConditions')
-    
-    cy.intercept({
-      method: 'GET',
-      url: (url) => url.includes('/fhir/Observation') && url.includes('patient=eps-001')
-    }, { fixture: 'observations.json' }).as('getObservations')
-    
-    cy.intercept({
-      method: 'GET',
-      url: (url) => url.includes('/fhir/Immunization') && url.includes('patient=eps-001')
-    }, { fixture: 'immunizations.json' }).as('getImmunizations')
-    
-    cy.intercept({
-      method: 'GET',
-      url: (url) => url.includes('/fhir/Procedure') && url.includes('patient=eps-001')
-    }, { fixture: 'procedures.json' }).as('getProcedures')
-    
-    cy.intercept({
-      method: 'GET',
-      url: (url) => url.includes('/fhir/CarePlan') && url.includes('patient=eps-001')
-    }, { fixture: 'careplans.json' }).as('getCarePlans')
-    
-    // Login - this will trigger the API calls
+    // Login
     cy.login('eps-001', 'OYS')
     
-    // Wait for all API calls to complete
-    cy.wait(['@getPatient', '@getConditions', '@getObservations', '@getImmunizations', '@getProcedures', '@getCarePlans'], { timeout: 15000 })
+    // Wait for API calls to complete
+    cy.wait('@fhirCalls', { timeout: 10000 })
+    cy.wait(500) // Small wait for data to load
   })
 
   it('should display the page title and patient name', () => {

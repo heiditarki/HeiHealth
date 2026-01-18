@@ -1,44 +1,15 @@
 describe('Details Page', () => {
   beforeEach(() => {
-    const patientId = 'eps-001'
+    // Set up intercepts for all FHIR endpoints
+    cy.intercept('GET', '**/fhir/**', { fixture: 'patient.json' }).as('fhirCalls')
     
-    // Set up intercepts BEFORE login (so they catch the API calls triggered by login)
-    // Use function matchers to check both path and query parameter
-    cy.intercept('GET', `**/fhir/Patient/${patientId}`, { fixture: 'patient.json' }).as('getPatient')
+    // Login
+    cy.login('eps-001', 'OYS')
     
-    cy.intercept({
-      method: 'GET',
-      url: (url) => url.includes('/fhir/Condition') && url.includes(`patient=${patientId}`)
-    }, { fixture: 'conditions.json' }).as('getConditions')
-    
-    cy.intercept({
-      method: 'GET',
-      url: (url) => url.includes('/fhir/Observation') && url.includes(`patient=${patientId}`)
-    }, { fixture: 'observations.json' }).as('getObservations')
-    
-    cy.intercept({
-      method: 'GET',
-      url: (url) => url.includes('/fhir/Immunization') && url.includes(`patient=${patientId}`)
-    }, { fixture: 'immunizations.json' }).as('getImmunizations')
-    
-    cy.intercept({
-      method: 'GET',
-      url: (url) => url.includes('/fhir/Procedure') && url.includes(`patient=${patientId}`)
-    }, { fixture: 'procedures.json' }).as('getProcedures')
-    
-    cy.intercept({
-      method: 'GET',
-      url: (url) => url.includes('/fhir/CarePlan') && url.includes(`patient=${patientId}`)
-    }, { fixture: 'careplans.json' }).as('getCarePlans')
-    
-    // Login - this will trigger the API calls
-    cy.login(patientId, 'OYS')
-    
-    // Wait for all API calls to complete (they happen after login when patientId is set)
-    cy.wait(['@getPatient', '@getConditions', '@getObservations', '@getImmunizations', '@getProcedures', '@getCarePlans'], { timeout: 15000 })
-    
-    // Navigate to Details tab (second sidebar item)
+    // Wait for API calls and navigate to Details tab
+    cy.wait('@fhirCalls', { timeout: 10000 })
     cy.get('.sidebar-item').eq(1).click()
+    cy.wait(500) // Small wait for navigation
   })
 
   it('should display all sections', () => {
