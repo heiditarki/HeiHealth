@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-color: #f8f9fa;
   padding: 24px;
 }
 
@@ -65,8 +65,8 @@
 
 .form-input:focus {
   outline: none;
-  border-color: #4169E1;
-  box-shadow: 0 0 0 3px rgba(65, 105, 225, 0.1);
+  border-color: #9ca3af;
+  box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.1);
 }
 
 .loading-text {
@@ -87,7 +87,7 @@
 
 .login-button {
   padding: 12px 24px;
-  background-color: #4169E1;
+  background-color: #374151;
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -99,7 +99,7 @@
 }
 
 .login-button:hover:not(:disabled) {
-  background-color: #3151c7;
+  background-color: #1f2937;
   transform: translateY(-1px);
 }
 

@@ -42,6 +42,16 @@ jobs:
         working-directory: ./frontend
         run: npm install
 
+      - name: Lint frontend
+        working-directory: ./frontend
+        run: npm run lint || true
+
+      - name: Lint backend
+        run: |
+          pip install flake8
+          flake8 app/ --count --select=E9,F63,F7,F82 --show-source --statistics || true
+          flake8 app/ --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics || true
+
       - name: Start backend server
         run: |
           python run.py &

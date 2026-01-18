@@ -343,7 +343,7 @@ const App = () => {
                 <h1 className="page-title">Patient Details</h1>
               </div>
 
-              <div className="dashboard-section">
+              <div className="dashboard-section conditions-section">
                 <h2 className="section-title">Conditions</h2>
                 <Conditions conditions={conditions} />
               </div>

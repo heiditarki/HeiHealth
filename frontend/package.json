@@ -12,7 +12,10 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.0.8",
-    "cypress": "^13.6.0"
+    "cypress": "^13.6.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "scripts": {
     "dev": "vite",
@@ -20,6 +23,8 @@
     "preview": "vite preview",
     "test": "cypress run",
     "test:open": "cypress open",
-    "test:ci": "cypress run --headless --browser chrome"
+    "test:ci": "cypress run --headless --browser chrome",
+    "lint": "npx eslint src --ext .js,.jsx",
+    "lint:fix": "npx eslint src --ext .js,.jsx --fix"
   }
 }

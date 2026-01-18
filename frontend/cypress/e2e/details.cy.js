@@ -1,17 +1,36 @@
 describe('Details Page', () => {
   beforeEach(() => {
-    // Login first
-    cy.login('eps-001', 'OYS')
+    const patientId = 'eps-001'
     
-    // Intercept API calls
-    cy.intercept('GET', '**/fhir/Patient/eps-001', { fixture: 'patient.json' }).as('getPatient')
-    cy.intercept('GET', '**/fhir/Condition?patient=eps-001', { fixture: 'conditions.json' }).as('getConditions')
-    cy.intercept('GET', '**/fhir/Observation?patient=eps-001', { fixture: 'observations.json' }).as('getObservations')
-    cy.intercept('GET', '**/fhir/Immunization?patient=eps-001', { fixture: 'immunizations.json' }).as('getImmunizations')
-    cy.intercept('GET', '**/fhir/Procedure?patient=eps-001', { fixture: 'procedures.json' }).as('getProcedures')
-    cy.intercept('GET', '**/fhir/CarePlan?patient=eps-001', { fixture: 'careplans.json' }).as('getCarePlans')
-
-    cy.wait(['@getPatient', '@getConditions', '@getObservations', '@getImmunizations', '@getProcedures', '@getCarePlans'], { timeout: 10000 })
+    // Set up intercepts BEFORE login (so they catch the API calls triggered by login)
+    // Use function matchers to check both path and query parameter
+    cy.intercept('GET', `**/fhir/Patient/${patientId}`, { fixture: 'patient.json' }).as('getPatient')
+    
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/Condition') && req.url.includes(`patient=${patientId}`)
+    }, { fixture: 'conditions.json' }).as('getConditions')
+    
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/Observation') && req.url.includes(`patient=${patientId}`)
+    }, { fixture: 'observations.json' }).as('getObservations')
+    
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/Immunization') && req.url.includes(`patient=${patientId}`)
+    }, { fixture: 'immunizations.json' }).as('getImmunizations')
+    
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/Procedure') && req.url.includes(`patient=${patientId}`)
+    }, { fixture: 'procedures.json' }).as('getProcedures')
+    
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/CarePlan') && req.url.includes(`patient=${patientId}`)
+    }, { fixture: 'careplans.json' }).as('getCarePlans')
+    
+    // Login - this will trigger the API calls
+    cy.login(patientId, 'OYS')
+    
+    // Wait for all API calls to complete (they happen after login when patientId is set)
+    cy.wait(['@getPatient', '@getConditions', '@getObservations', '@getImmunizations', '@getProcedures', '@getCarePlans'], { timeout: 15000 })
     
     // Navigate to Details tab (second sidebar item)
     cy.get('.sidebar-item').eq(1).click()

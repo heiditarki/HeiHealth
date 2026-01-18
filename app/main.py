@@ -1,17 +1,22 @@
 """
 FastAPI application entry point for HeiHealth backend.
 
-This backend simulates a Finnish SMART App Launch and exposes FHIR-style REST endpoints
-based on HL7 SynderAI European Patient Summary (EPS) Bundle format using synthetic data.
+This backend simulates a Finnish SMART App Launch and exposes FHIR-style REST
+endpoints based on HL7 SynderAI European Patient Summary (EPS) Bundle format
+using synthetic data.
 """
 
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app import smart, fhir_api
 
 app = FastAPI(
     title="HeiHealth Backend",
-    description="FastAPI backend for European Patient Summary (EPS) data with SMART App Launch simulation",
+    description=(
+        "FastAPI backend for European Patient Summary (EPS) data with "
+        "SMART App Launch simulation"
+    ),
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc",
@@ -19,8 +24,6 @@ app = FastAPI(
 
 # Add CORS middleware to allow frontend access
 # In production, update allow_origins with your frontend URL(s)
-import os
-
 FRONTEND_URL = os.getenv("FRONTEND_URL", "*")
 app.add_middleware(
     CORSMiddleware,
@@ -41,7 +44,10 @@ async def root():
     return {
         "name": "HeiHealth Backend",
         "version": "1.0.0",
-        "description": "European Patient Summary (EPS) FHIR API with SMART App Launch simulation",
+        "description": (
+            "European Patient Summary (EPS) FHIR API with "
+            "SMART App Launch simulation"
+        ),
         "endpoints": {
             "smart": "/smart/launch",
             "fhir": {
@@ -91,7 +97,8 @@ async def list_patients():
                     else "Unknown"
                 )
 
-                # Extract henkilötunnus (Finnish SSN) - look for identifier with system containing "1.2.246.21"
+                # Extract henkilötunnus (Finnish SSN)
+                # Look for identifier with system containing "1.2.246.21"
                 henkilötunnus = None
                 for identifier in patient.get("identifier", []):
                     system = identifier.get("system", "")
@@ -115,7 +122,7 @@ async def list_patients():
                 patients_info.append(
                     {"id": patient_id, "name": "Unknown", "identifier": patient_id}
                 )
-        except Exception as e:
+        except Exception:
             # If there's an error loading patient, still include the ID
             patients_info.append(
                 {"id": patient_id, "name": "Unknown", "identifier": patient_id}

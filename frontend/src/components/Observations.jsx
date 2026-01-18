@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Observations = ({ observations }) => {
+  const [expandedVitalSigns, setExpandedVitalSigns] = useState(false)
+  const [expandedLabResults, setExpandedLabResults] = useState(false)
+
   if (!observations || !observations.entry) {
     return <div className="loading">Loading observations...</div>
   }
@@ -63,40 +66,57 @@ const Observations = ({ observations }) => {
     (entry) => entry.resource.category?.[0]?.coding?.[0]?.code === 'laboratory'
   )
 
+  // Show first 3 items when collapsed
+  const SHOW_WHEN_COLLAPSED = 3
+
   return (
     <div>
       {vitalSigns.length > 0 && (
         <div className="card">
-          <h2 className="card-title">Vital Signs</h2>
-          <div className="observations-grid">
-            {vitalSigns.map((entry, index) => {
+          <h2 className="card-title">
+            Vital Signs
+            <span className="item-count">({vitalSigns.length})</span>
+          </h2>
+          <div className="observations-list">
+            {(expandedVitalSigns ? vitalSigns : vitalSigns.slice(0, SHOW_WHEN_COLLAPSED)).map((entry, index) => {
               const observation = entry.resource
               const name = getObservationName(observation)
               const { value, unit } = formatValue(observation)
               const date = observation.effectiveDateTime
 
               return (
-                <div key={observation.id || index} className="observation-card">
-                  <div className="observation-label">{name}</div>
-                  <div>
+                <div key={observation.id || index} className="observation-list-item">
+                  <div className="observation-list-label">{name}</div>
+                  <div className="observation-list-value">
                     <span className="observation-value">{value}</span>
                     {unit && <span className="observation-unit">{unit}</span>}
                   </div>
                   {date && (
-                    <div className="observation-date">{formatDate(date)}</div>
+                    <div className="observation-list-date">{formatDate(date)}</div>
                   )}
                 </div>
               )
             })}
           </div>
+          {vitalSigns.length > SHOW_WHEN_COLLAPSED && (
+            <button
+              className="expand-toggle"
+              onClick={() => setExpandedVitalSigns(!expandedVitalSigns)}
+            >
+              {expandedVitalSigns ? 'Show less' : `Show ${vitalSigns.length - SHOW_WHEN_COLLAPSED} more`}
+            </button>
+          )}
         </div>
       )}
 
       {labResults.length > 0 && (
         <div className="card">
-          <h2 className="card-title">Laboratory Results</h2>
-          <div className="observations-grid">
-            {labResults.map((entry, index) => {
+          <h2 className="card-title">
+            Laboratory Results
+            <span className="item-count">({labResults.length})</span>
+          </h2>
+          <div className="observations-list">
+            {(expandedLabResults ? labResults : labResults.slice(0, SHOW_WHEN_COLLAPSED)).map((entry, index) => {
               const observation = entry.resource
               const name = getObservationName(observation)
               const { value, unit } = formatValue(observation)
@@ -104,26 +124,32 @@ const Observations = ({ observations }) => {
               const interpretation = observation.interpretation?.[0]?.coding?.[0]?.display
 
               return (
-                <div key={observation.id || index} className="observation-card">
-                  <div className="observation-label">{name}</div>
-                  <div>
+                <div key={observation.id || index} className="observation-list-item">
+                  <div className="observation-list-label">{name}</div>
+                  <div className="observation-list-value">
                     <span className="observation-value">{value}</span>
                     {unit && <span className="observation-unit">{unit}</span>}
-                  </div>
-                  {interpretation && (
-                    <div className="observation-date">
+                    {interpretation && (
                       <span className={`badge ${interpretation === 'High' ? 'badge-active' : ''}`}>
                         {interpretation}
                       </span>
-                    </div>
-                  )}
+                    )}
+                  </div>
                   {date && (
-                    <div className="observation-date">{formatDate(date)}</div>
+                    <div className="observation-list-date">{formatDate(date)}</div>
                   )}
                 </div>
               )
             })}
           </div>
+          {labResults.length > SHOW_WHEN_COLLAPSED && (
+            <button
+              className="expand-toggle"
+              onClick={() => setExpandedLabResults(!expandedLabResults)}
+            >
+              {expandedLabResults ? 'Show less' : `Show ${labResults.length - SHOW_WHEN_COLLAPSED} more`}
+            </button>
+          )}
         </div>
       )}
     </div>

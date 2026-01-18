@@ -3,7 +3,6 @@ SMART App Launch simulation for Finnish healthcare context.
 """
 
 from fastapi import APIRouter, Query
-from typing import Optional
 from pydantic import BaseModel
 
 router = APIRouter(prefix="/smart", tags=["SMART"])
@@ -27,8 +26,8 @@ async def smart_launch(
     Simulates a SMART App Launch endpoint.
 
     Returns a SMART-like context with patientId, organization, and practitionerId.
-    This simulates the launch context that would be provided by a real EHR system
-    during a SMART App Launch flow.
+    This simulates the launch context that would be provided by a real EHR
+    system during a SMART App Launch flow.
 
     Args:
         patient: Patient identifier (e.g., eps-001)

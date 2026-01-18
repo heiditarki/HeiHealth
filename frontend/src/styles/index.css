@@ -311,6 +311,14 @@ code {
   margin-bottom: 48px;
 }
 
+.conditions-section {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
 .section-title {
   font-size: 20px;
   font-weight: 600;
@@ -596,6 +604,89 @@ code {
   font-size: 12px;
   color: #9ca3af;
   margin-top: 8px;
+}
+
+/* Expandable Lists */
+.item-count {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.observations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.observation-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border-left: 3px solid #4169E1;
+  transition: all 0.2s ease;
+}
+
+.observation-list-item:hover {
+  background-color: #f3f4f6;
+}
+
+.observation-list-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  flex: 1;
+}
+
+.observation-list-value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.observation-list-value .observation-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.observation-list-value .observation-unit {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.observation-list-date {
+  font-size: 12px;
+  color: #9ca3af;
+  min-width: 100px;
+  text-align: right;
+}
+
+.expand-toggle {
+  margin-top: 16px;
+  padding: 10px 16px;
+  background-color: transparent;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.expand-toggle:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+  color: #374151;
 }
 
 .conditions-grid {
