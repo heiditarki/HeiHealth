@@ -1,18 +1,33 @@
 describe('Overview Page', () => {
   beforeEach(() => {
-    // Login first
+    // Set up intercepts BEFORE login (so they catch the API calls triggered by login)
+    cy.intercept('GET', '**/fhir/Patient/eps-001', { fixture: 'patient.json' }).as('getPatient')
+    
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/Condition') && req.url.includes('patient=eps-001')
+    }, { fixture: 'conditions.json' }).as('getConditions')
+    
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/Observation') && req.url.includes('patient=eps-001')
+    }, { fixture: 'observations.json' }).as('getObservations')
+    
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/Immunization') && req.url.includes('patient=eps-001')
+    }, { fixture: 'immunizations.json' }).as('getImmunizations')
+    
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/Procedure') && req.url.includes('patient=eps-001')
+    }, { fixture: 'procedures.json' }).as('getProcedures')
+    
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/CarePlan') && req.url.includes('patient=eps-001')
+    }, { fixture: 'careplans.json' }).as('getCarePlans')
+    
+    // Login - this will trigger the API calls
     cy.login('eps-001', 'OYS')
     
-    // Intercept API calls
-    cy.intercept('GET', '**/fhir/Patient/eps-001', { fixture: 'patient.json' }).as('getPatient')
-    cy.intercept('GET', '**/fhir/Condition?patient=eps-001', { fixture: 'conditions.json' }).as('getConditions')
-    cy.intercept('GET', '**/fhir/Observation?patient=eps-001', { fixture: 'observations.json' }).as('getObservations')
-    cy.intercept('GET', '**/fhir/Immunization?patient=eps-001', { fixture: 'immunizations.json' }).as('getImmunizations')
-    cy.intercept('GET', '**/fhir/Procedure?patient=eps-001', { fixture: 'procedures.json' }).as('getProcedures')
-    cy.intercept('GET', '**/fhir/CarePlan?patient=eps-001', { fixture: 'careplans.json' }).as('getCarePlans')
-    
     // Wait for all API calls to complete
-    cy.wait(['@getPatient', '@getConditions', '@getObservations', '@getImmunizations', '@getProcedures', '@getCarePlans'], { timeout: 10000 })
+    cy.wait(['@getPatient', '@getConditions', '@getObservations', '@getImmunizations', '@getProcedures', '@getCarePlans'], { timeout: 15000 })
   })
 
   it('should display the page title and patient name', () => {

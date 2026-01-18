@@ -1,11 +1,14 @@
 describe('Navigation', () => {
   beforeEach(() => {
-    // Login first
+    // Intercept API calls BEFORE login
+    cy.intercept('GET', '**/fhir/Patient/eps-001', { fixture: 'patient.json' }).as('getPatient')
+    cy.intercept('GET', '**/fhir/**?patient=eps-001', { fixture: 'patient.json' }).as('getPatientData')
+    
+    // Login - this will trigger the API calls
     cy.login('eps-001', 'OYS')
     
-    // Intercept API calls
-    cy.intercept('GET', '**/fhir/**', { fixture: 'patient.json' }).as('apiCalls')
-    cy.wait('@apiCalls', { timeout: 10000 })
+    // Wait for API calls to complete
+    cy.wait(['@getPatient', '@getPatientData'], { timeout: 15000 })
   })
 
   it('should have sidebar navigation', () => {

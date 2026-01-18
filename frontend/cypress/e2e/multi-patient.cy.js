@@ -12,16 +12,19 @@ describe('Multi-Patient Support', () => {
   })
 
   it('should switch between patients', () => {
+    // Set up intercepts for eps-001 BEFORE login
+    cy.intercept('GET', '**/fhir/Patient/eps-001', { fixture: 'patient.json' }).as('getPatient1')
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/') && req.url.includes('patient=eps-001')
+    }, { fixture: 'patient.json' }).as('getPatient1Data')
+    
     // Login with eps-001
     cy.login('eps-001', 'OYS')
     
-    cy.intercept('GET', '**/fhir/Patient/eps-001', { fixture: 'patient.json' }).as('getPatient1')
-    cy.intercept('GET', '**/fhir/**?patient=eps-001', { fixture: 'patient.json' }).as('getPatient1Data')
-    
-    cy.wait(['@getPatient1', '@getPatient1Data'], { timeout: 10000 })
+    cy.wait(['@getPatient1', '@getPatient1Data'], { timeout: 15000 })
     cy.get('.page-subtitle').should('contain', 'Albert')
     
-    // Switch to eps-005
+    // Set up intercepts for eps-005 BEFORE switching
     cy.intercept('GET', '**/fhir/Patient/eps-005', {
       statusCode: 200,
       body: {
@@ -39,7 +42,9 @@ describe('Multi-Patient Support', () => {
       }
     }).as('getPatient5')
     
-    cy.intercept('GET', '**/fhir/**?patient=eps-005', {
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/') && req.url.includes('patient=eps-005')
+    }, {
       statusCode: 200,
       body: {
         resourceType: 'Bundle',
@@ -49,7 +54,7 @@ describe('Multi-Patient Support', () => {
     }).as('getPatient5Data')
     
     cy.get('#patient-select').select('eps-005')
-    cy.wait(['@getPatient5', '@getPatient5Data'], { timeout: 10000 })
+    cy.wait(['@getPatient5', '@getPatient5Data'], { timeout: 15000 })
     cy.get('.page-subtitle').should('contain', 'Aurėja')
   })
 
@@ -63,8 +68,7 @@ describe('Multi-Patient Support', () => {
   })
 
   it('should display nationality for Lithuanian patient', () => {
-    cy.login('eps-005', 'OYS')
-    
+    // Set up intercepts BEFORE login
     cy.intercept('GET', '**/fhir/Patient/eps-005', {
       statusCode: 200,
       body: {
@@ -80,12 +84,16 @@ describe('Multi-Patient Support', () => {
       }
     }).as('getPatient5')
     
-    cy.intercept('GET', '**/fhir/**?patient=eps-005', {
+    cy.intercept('GET', (req) => {
+      return req.url.includes('/fhir/') && req.url.includes('patient=eps-005')
+    }, {
       statusCode: 200,
       body: { resourceType: 'Bundle', type: 'searchset', entry: [] }
     }).as('getPatient5Data')
     
-    cy.wait(['@getPatient5', '@getPatient5Data'], { timeout: 10000 })
+    cy.login('eps-005', 'OYS')
+    
+    cy.wait(['@getPatient5', '@getPatient5Data'], { timeout: 15000 })
     
     cy.get('.info-label').contains('Nationality').should('be.visible')
     cy.get('.info-value').contains('Lithuania').should('be.visible')
