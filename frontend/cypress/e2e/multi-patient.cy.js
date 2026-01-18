@@ -14,8 +14,9 @@ describe('Multi-Patient Support', () => {
   it('should switch between patients', () => {
     // Set up intercepts for eps-001 BEFORE login
     cy.intercept('GET', '**/fhir/Patient/eps-001', { fixture: 'patient.json' }).as('getPatient1')
-    cy.intercept('GET', (req) => {
-      return req.url.includes('/fhir/') && req.url.includes('patient=eps-001')
+    cy.intercept({
+      method: 'GET',
+      url: (url) => url.includes('/fhir/') && url.includes('patient=eps-001')
     }, { fixture: 'patient.json' }).as('getPatient1Data')
     
     // Login with eps-001
@@ -42,8 +43,9 @@ describe('Multi-Patient Support', () => {
       }
     }).as('getPatient5')
     
-    cy.intercept('GET', (req) => {
-      return req.url.includes('/fhir/') && req.url.includes('patient=eps-005')
+    cy.intercept({
+      method: 'GET',
+      url: (url) => url.includes('/fhir/') && url.includes('patient=eps-005')
     }, {
       statusCode: 200,
       body: {
@@ -84,8 +86,9 @@ describe('Multi-Patient Support', () => {
       }
     }).as('getPatient5')
     
-    cy.intercept('GET', (req) => {
-      return req.url.includes('/fhir/') && req.url.includes('patient=eps-005')
+    cy.intercept({
+      method: 'GET',
+      url: (url) => url.includes('/fhir/') && url.includes('patient=eps-005')
     }, {
       statusCode: 200,
       body: { resourceType: 'Bundle', type: 'searchset', entry: [] }

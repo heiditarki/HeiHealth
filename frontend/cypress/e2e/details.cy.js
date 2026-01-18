@@ -6,24 +6,29 @@ describe('Details Page', () => {
     // Use function matchers to check both path and query parameter
     cy.intercept('GET', `**/fhir/Patient/${patientId}`, { fixture: 'patient.json' }).as('getPatient')
     
-    cy.intercept('GET', (req) => {
-      return req.url.includes('/fhir/Condition') && req.url.includes(`patient=${patientId}`)
+    cy.intercept({
+      method: 'GET',
+      url: (url) => url.includes('/fhir/Condition') && url.includes(`patient=${patientId}`)
     }, { fixture: 'conditions.json' }).as('getConditions')
     
-    cy.intercept('GET', (req) => {
-      return req.url.includes('/fhir/Observation') && req.url.includes(`patient=${patientId}`)
+    cy.intercept({
+      method: 'GET',
+      url: (url) => url.includes('/fhir/Observation') && url.includes(`patient=${patientId}`)
     }, { fixture: 'observations.json' }).as('getObservations')
     
-    cy.intercept('GET', (req) => {
-      return req.url.includes('/fhir/Immunization') && req.url.includes(`patient=${patientId}`)
+    cy.intercept({
+      method: 'GET',
+      url: (url) => url.includes('/fhir/Immunization') && url.includes(`patient=${patientId}`)
     }, { fixture: 'immunizations.json' }).as('getImmunizations')
     
-    cy.intercept('GET', (req) => {
-      return req.url.includes('/fhir/Procedure') && req.url.includes(`patient=${patientId}`)
+    cy.intercept({
+      method: 'GET',
+      url: (url) => url.includes('/fhir/Procedure') && url.includes(`patient=${patientId}`)
     }, { fixture: 'procedures.json' }).as('getProcedures')
     
-    cy.intercept('GET', (req) => {
-      return req.url.includes('/fhir/CarePlan') && req.url.includes(`patient=${patientId}`)
+    cy.intercept({
+      method: 'GET',
+      url: (url) => url.includes('/fhir/CarePlan') && url.includes(`patient=${patientId}`)
     }, { fixture: 'careplans.json' }).as('getCarePlans')
     
     // Login - this will trigger the API calls
